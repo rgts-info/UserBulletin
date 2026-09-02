@@ -1,0 +1,581 @@
+.bg-matrix-theme {
+  --background: #0b0c10;
+}
+
+.hero-container {
+  text-align: center;
+  padding: 40px 10px 20px 10px;
+  background: radial-gradient(circle at center, #1f2833 0%, #0b0c10 100%);
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  letter-spacing: 1px;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a3704c;
+  margin: 0 0 12px 0;
+}
+
+.brand-hook {
+  font-size: 13px;
+  color: #66fcf1;
+  margin: 0;
+}
+
+.download-action-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 30px auto;
+  max-width: 340px;
+  padding: 0 10px;
+}
+
+.store-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #a3704c;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.badge-icon { font-size: 28px; margin-right: 12px; display: flex; align-items: center; }
+.badge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  small { font-size: 8.5px; color: #bfa18f; margin-bottom: 2px; }
+  strong { font-size: 13.5px; }
+}
+
+/* Structural Layout Card Wrappers */
+.guide-card-wrapper {
+  background-color: #1f2833;
+  border-radius: 12px;
+  padding: 22px;
+  margin: 0 auto 25px auto;
+  max-width: 480px;
+  box-sizing: border-box;
+
+  margin-top: 15px; //Added for RGTS QuickStart
+}
+
+.highlight-container-card {
+  border: 1.5px solid #a3704c;
+  box-shadow: 0 4px 20px rgba(163, 112, 76, 0.1);
+}
+
+.text-container-card {
+  border: 1px solid #45a29e;
+}
+
+.guide-card-header {
+  font-size: 26px; //Changed 09032026 from 17 to 26
+  font-weight: 700;
+  color: #ffffff;
+  // margin-bottom: 15px; REMARK: 09032026
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+
+/* Highly Scannable Punchy Ordered List */
+.punchy-ordered-list {
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  li {
+    font-size: 13.5px;
+    color: #c5c6c7;
+    line-height: 1.6;
+    
+    strong { color: #ffffff; }
+  }
+}
+
+.simple-rule-p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #c5c6c7;
+  margin: 0 0 20px 0;
+  
+  strong { color: #66fcf1; }
+}
+
+/* Mock Application Interface Display Classes */
+.mock-ui-display {
+  background-color: #0b0c10;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.ui-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ui-color-box {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: max-content;
+}
+
+.cell-green { background-color: #2dd36f; color: #ffffff; }
+.cell-gold { background-color: #ffc409; color: #000000; }
+
+.ui-desc {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #a6a6a6;
+}
+
+.final-shortcut-p {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+/* Bulletproof Custom Button Properties — Defends Against Hydration Shifts */
+.custom-warning-btn {
+  --background: #ffc409 !important;
+  --background-activated: #e0ac08 !important;
+  --color: #000000 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.2px;
+  
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Enhance the Main Header Branding Blocks */
+.main-title {
+  font-size: 34px; /* Increased from 32px */
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.sub-title {
+  font-size: 20px; /* Increased from 18px */
+  font-weight: 600;
+  color: #a3704c;
+  margin: 0 0 12px 0;
+}
+
+/* Optimize the 30-Second Quickstart Checklist */
+.punchy-ordered-list {
+  padding-left: 24px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Increased spacing between items */
+  
+  li {
+    font-size: 15.5px; /* Increased from 13.5px for instant readability */
+    color: #c5c6c7;
+    line-height: 1.7;  /* Increased line height to prevent crowding */
+    
+    strong { color: #ffffff; font-size: 16px; }
+  }
+}
+
+/* Optimize the EasyPick Quick-Rule Paragraphs */
+.simple-rule-p {
+  font-size: 15.5px; /* Increased from 13.5px */
+  line-height: 1.7;
+  color: #c5c6c7;
+  margin: 0 0 20px 0;
+}
+
+/* Enhance the Mock UI Interface Text Strings */
+.ui-desc {
+  font-size: 14px; /* Increased from 12.5px */
+  line-height: 1.6;
+  color: #c5c6c7; /* Brightened slightly for higher dark-mode contrast */
+}
+
+.ui-color-box {
+  display: inline-block;
+  font-size: 12px; /* Increased from 11px */
+  font-weight: 700;
+  padding: 4px 10px; /* Added more padding to make the indicator look premium */
+  border-radius: 4px;
+  width: max-content;
+}
+
+
+//Fr test-quickstart
+
+// ion-grid {
+//     --ion-grid-padding-sm: 20px;
+//     --ion-grid-padding-md: 30px;
+//     --ion-grid-padding-lg: 40px;
+//     --ion-grid-padding-xl: 100px;
+// }
+
+ion-img, img {
+    touch-action: pan-x pan-y;
+    user-select: none;
+}
+
+img {
+    touch-action: pan-x pan-y;
+    user-select: none;
+    transition: transform 0.25s ease;
+}
+
+// img.responsive-img {
+//     max-width: 100%;       /* Ensures the image does not exceed the width of its container */
+//     max-height: 33.33vh;   /* Limits the image height to one-third of the viewport height */
+//     height: auto;          /* Maintains the original aspect ratio */
+//     width: auto;           /* Ensures the image scales proportionately */
+//     touch-action: pan-x pan-y;
+//     user-select: none;
+//     transition: transform 0.25s ease;
+//   }
+
+  img.responsive-img {
+    max-width: 100%;
+    max-height: 33.33vh;   /* Limits the image height to one-third of the viewport height */
+    height: auto;
+    width: auto;
+    touch-action: manipulation;
+    user-select: none;
+    transition: transform 0.25s ease;
+  }
+  
+    /*
+        img.responsive-img-no-max-height {
+
+            max-width: 100%;
+            // max-height: 33.33vh; //NOTE: 06072026 Cannot use this as it will make the img very small 
+                                    // Limits the image height to one-third of the viewport height 
+            // height: auto;
+            // width: auto;
+
+            width: 203px;
+            height: 496px;
+            object-fit: cover;   // keeps aspect ratio, crops if needed
+            touch-action: manipulation;
+            user-select: none;
+            transition: transform 0.25s ease;
+
+        }
+    */
+
+    /* BKUP: 06122026
+        img.responsive-img-no-max-height {
+            max-width: 100%;        // flex inside ion-col
+            height: auto;           // preserve aspect ratio
+            max-height: 80vh;       // optional: cap height to viewport NOTE: 06082026 Changed to 90vh
+            object-fit: cover;      // crop if needed, keeps ratio
+            touch-action: manipulation;
+            user-select: none;
+            transition: transform 0.25s ease;
+        }
+
+
+        .custom-col {
+            flex: 1; // Forces columns to share width equally, just like ion-col
+            padding: 5px; // Optional: adds spacing between columns
+        }
+    */
+
+
+/* Add these styles to your component's SCSS file */
+// .zoom-enabled {
+//     touch-action: pan-x pan-y;
+//     user-select: none;
+//     transition: transform 0.25s ease;
+//   }
+  
+//   .zoom-enabled img {
+//     max-width: 100%;
+//     max-height: 33.33vh;  /* Adjust height as needed */
+//     height: auto;
+//     width: auto;
+//   }
+  
+
+  
+// img {
+//     transition: transform 0.25s ease;
+// }
+  
+
+ion-card{
+    background: cornsilk;
+}
+
+ion-card-title{
+    color: black;
+}
+
+.swiper-button-next{
+    font-weight: 900;
+}
+
+.swiper-button-prev{
+    font-weight: 900;
+}
+.swiper {
+    --swiper-pagination-color: #fff;
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 16px));
+}
+
+.img-wrapper {
+    // min-height: 200px;
+    // width: 100%;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+//url(assets/img/Snapshot_7.PNG)
+// ion-content{
+//     // --background: url('assets/img/Snapshot_7.PNG')  no-repeat cover fixed center;
+
+//     // background: url('assets/img/Snapshot_7.PNG') no-repeat fixed center; 
+//     // -webkit-background-size: cover;
+//     // -moz-background-size: cover;
+//     // background-size: cover;
+
+//     --background:none;
+//     background:url('assets/img/Snapshot_7.PNG');
+//     background-size: 100% 100%;
+//     background-position: center center;
+
+.scan_problems{
+    display: flex;
+    justify-content: center;
+}
+
+.quickStarted{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.text_bolder{
+    font-weight:bolder;
+    color: red;
+    font-size: larger;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+#right-3lines {
+    position: relative;
+    float: left;
+    // width: 81%;
+    // padding-top: 3px;
+    // padding-bottom: 2px;
+    // height:100%;
+}
+
+
+    // This wrapping container is the secret to protecting your H1 tag
+
+    /* BKUP: 06122026
+        .custom-col {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    */
+
+/* BKUP: 06122026
+    .scrollable-row-container {
+    width: 100%;
+    overflow-x: auto;          // Keeps horizontal swiping working 
+    overflow-y: auto;          // FIX: Allows page to scroll down/up when images grow vertically 
+    -webkit-overflow-scrolling: touch; // Ensures smooth, native feeling momentum physics 
+    }
+
+    .custom-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: max-content;        
+    align-items: flex-start;   // FIX: Prevents columns from snapping to weird heights during zoom
+    }
+*/
+
+
+// img.zoom-image {
+//   max-width: 100%;
+//   height: auto;
+//   max-height: 80vh;
+//   object-fit: cover;
+//   /* 'pinch-zoom' lets the device zoom the image directly, 'pan-y' keeps page scrolling alive */
+//   touch-action: pan-y pinch-zoom; 
+// }
+
+img.zoom-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  
+  /* FIX: 'pan-x' fixes horizontal scrolling, 'pan-y' fixes vertical scrolling, 'pinch-zoom' handles the fingers */
+  touch-action: pan-x pan-y pinch-zoom; 
+}
+
+
+
+    /* ========================================== */
+    /* 1. MOBILE GESTURE LAYOUT (Base Settings)   */
+    /* ========================================== */
+    .scrollable-row-container {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: max-content; /* Keeps items side-by-side for horizontal finger swipes */
+        align-items: flex-start;
+    }
+
+    .custom-col {
+        flex: 1;
+        padding: 5px;
+    }
+
+
+    /* 06122026 From Genimi
+        img.responsive-img-no-max-height {
+            width: 100%;
+            height: auto;
+            max-height: 75vh; // Caps vertical height on phone screens to prevent long scrolling 
+            object-fit: contain;
+        }
+    */
+
+    /*
+        img.responsive-img-no-max-height {
+            max-width: 100%;        // flex inside ion-col
+            height: auto;           // preserve aspect ratio
+            max-height: 80vh;       // optional: cap height to viewport NOTE: 06082026 Changed to 90vh
+            object-fit: cover;      // crop if needed, keeps ratio
+            touch-action: manipulation;
+            user-select: none;
+            transition: transform 0.25s ease;
+        }
+    */
+
+    /* 1. MOBILE SETTINGS (Keep your touch rules) */
+    /* ========================================== */
+    img.responsive-img-no-max-height {
+        max-width: 100%;
+        height: auto;
+        max-height: 80vh; /* Capped for mobile screens */
+        object-fit: cover; /* Fine for mobile swiping */
+        touch-action: manipulation;
+        user-select: none;
+        transition: transform 0.25s ease;
+    }
+
+
+
+    /* 🚀 FIX: HORIZONTAL DISPAYS SIDE-BY-SIDE ON DESKTOP */
+    /*
+        @media (min-width: 769px) {
+
+            .scrollable-row-container {
+                overflow-x: auto; // Allow desktop trackpad/mouse horizontal panning if rows are wider than monitor 
+            }
+
+            .custom-row {
+                flex-direction: row !important; // Forces side-by-side display 
+                width: max-content !important;  // Keeps the row grouping tight 
+                align-items: stretch;          // Forces both columns to take up equal height context
+                gap: 30px;                     // FIX: Controls the exact spacing gap between your images 
+                padding: 20px;
+            }
+
+            .custom-col {
+                width: auto;
+                max-width: none;
+                margin-bottom: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+                // img.responsive-img-no-max-height {
+                //     width: auto;                  // FIX: Relinquish explicit width rules 
+                //     max-width: 100%;
+                //     // FIX: Cap the height of both images to a fixed desktop viewport boundary. 
+                //     // This perfectly aligns the heights of P15 and P16 on the screen! 
+                //     height: 65vh !important;       
+                //     max-height: 65vh !important;  
+                //     object-fit: contain !important; // Prevents text cropping 
+                //     transition: none !important;
+                // }
+
+
+            img.responsive-img-no-max-height {
+                height: auto !important;       
+                max-height: none !important;  
+                object-fit: contain !important; 
+                
+                // 🚀 ADD THESE LINES: Enables smooth desktop hover enlargement 
+                cursor: zoom-in;
+                transition: transform 0.3s ease, z-index 0.3s ease !important; 
+                transform-origin: top center; // Enlarges downward from the top text line 
+
+                &:hover {
+                transform: scale(2.0); // Tweak this number to control the enlargement level (e.g., 1.5, 2.0, 2.5) 
+                z-index: 999 !important; // Pushes the image above surrounding text lines and components 
+                position: relative;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+                }
+            }
+
+        }
+    */
+
+
+// }

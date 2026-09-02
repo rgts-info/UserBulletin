@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{i as s,m as e,n as t}from"./chunk-NDCUGB46.mjs";import"./chunk-YSJSO6JS.mjs";var o=()=>":host{scroll-snap-align:center;scroll-snap-stop:always;-ms-flex-negative:0;flex-shrink:0;width:100%;min-height:1px;overflow-y:scroll;scrollbar-width:none;-ms-overflow-style:none;}:host::-webkit-scrollbar{display:none}",r=class{constructor(n){s(this,n)}render(){return e(t,{key:"b03079d7cfd78724828a4f42d7a7030457682b25"},e("slot",{key:"c4c86280e5e577ee31a181758fea27a788fd87fa"}))}};r.style=o();export{r as ion_segment_content};

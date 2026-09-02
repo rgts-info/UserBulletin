@@ -1,0 +1,273 @@
+import { createRequire } from 'module';const require = createRequire(import.meta.url);
+import {
+  findClosestIonContent,
+  getScrollElement,
+  printIonContentErrorMsg
+} from "./chunk-2ALKC222.js";
+import {
+  ENABLE_HTML_CONTENT_DEFAULT
+} from "./chunk-GDQNAZUU.js";
+import {
+  sanitizeDOMString
+} from "./chunk-P4ESFU3W.js";
+import "./chunk-KZSWY5U2.js";
+import "./chunk-L65IGNW5.js";
+import {
+  getIonMode
+} from "./chunk-NP2DGJVA.js";
+import {
+  Host,
+  config,
+  createEvent,
+  getElement,
+  h,
+  readTask,
+  registerInstance,
+  writeTask
+} from "./chunk-5XV4S2PZ.js";
+import "./chunk-EEKZWN3V.js";
+
+// node_modules/@ionic/core/dist/esm/ion-infinite-scroll_2.entry.js
+var infiniteScrollCss = () => `ion-infinite-scroll{display:none;width:100%}.infinite-scroll-enabled{display:block}`;
+var InfiniteScroll = class {
+  constructor(hostRef) {
+    registerInstance(this, hostRef);
+    this.ionInfinite = createEvent(this, "ionInfinite", 7);
+  }
+  thrPx = 0;
+  thrPc = 0;
+  scrollEl;
+  /**
+   * didFire exists so that ionInfinite
+   * does not fire multiple times if
+   * users continue to scroll after
+   * scrolling into the infinite
+   * scroll threshold.
+   */
+  didFire = false;
+  isBusy = false;
+  get el() {
+    return getElement(this);
+  }
+  isLoading = false;
+  /**
+   * The threshold distance from the bottom
+   * of the content to call the `infinite` output event when scrolled.
+   * The threshold value can be either a percent, or
+   * in pixels. For example, use the value of `10%` for the `infinite`
+   * output event to get called when the user has scrolled 10%
+   * from the bottom of the page. Use the value `100px` when the
+   * scroll is within 100 pixels from the bottom of the page.
+   */
+  threshold = "15%";
+  thresholdChanged() {
+    const val = this.threshold;
+    if (val.lastIndexOf("%") > -1) {
+      this.thrPx = 0;
+      this.thrPc = parseFloat(val) / 100;
+    } else {
+      this.thrPx = parseFloat(val);
+      this.thrPc = 0;
+    }
+  }
+  /**
+   * If `true`, the infinite scroll will be hidden and scroll event listeners
+   * will be removed.
+   *
+   * Set this to true to disable the infinite scroll from actively
+   * trying to receive new data while scrolling. This is useful
+   * when it is known that there is no more data that can be added, and
+   * the infinite scroll is no longer needed.
+   */
+  disabled = false;
+  disabledChanged() {
+    const disabled = this.disabled;
+    if (disabled) {
+      this.isLoading = false;
+      this.isBusy = false;
+    }
+    this.enableScrollEvents(!disabled);
+  }
+  /**
+   * The position of the infinite scroll element.
+   * The value can be either `top` or `bottom`.
+   */
+  position = "bottom";
+  /**
+   * Emitted when the scroll reaches
+   * the threshold distance. From within your infinite handler,
+   * you must call the infinite scroll's `complete()` method when
+   * your async operation has completed.
+   */
+  ionInfinite;
+  async connectedCallback() {
+    const contentEl = findClosestIonContent(this.el);
+    if (!contentEl) {
+      printIonContentErrorMsg(this.el);
+      return;
+    }
+    this.scrollEl = await getScrollElement(contentEl);
+    this.thresholdChanged();
+    this.disabledChanged();
+    if (this.position === "top") {
+      writeTask(() => {
+        if (this.scrollEl) {
+          this.scrollEl.scrollTop = this.scrollEl.scrollHeight - this.scrollEl.clientHeight;
+        }
+      });
+    }
+  }
+  disconnectedCallback() {
+    this.enableScrollEvents(false);
+    this.scrollEl = void 0;
+  }
+  onScroll = () => {
+    const scrollEl = this.scrollEl;
+    if (!scrollEl || !this.canStart()) {
+      return 1;
+    }
+    const infiniteHeight = this.el.offsetHeight;
+    if (infiniteHeight === 0) {
+      return 2;
+    }
+    const scrollTop = scrollEl.scrollTop;
+    const scrollHeight = scrollEl.scrollHeight;
+    const height = scrollEl.offsetHeight;
+    const threshold = this.thrPc !== 0 ? height * this.thrPc : this.thrPx;
+    const distanceFromInfinite = this.position === "bottom" ? scrollHeight - infiniteHeight - scrollTop - threshold - height : scrollTop - infiniteHeight - threshold;
+    if (distanceFromInfinite < 0) {
+      if (!this.didFire) {
+        this.isLoading = true;
+        this.didFire = true;
+        this.ionInfinite.emit();
+        return 3;
+      }
+    }
+    return 4;
+  };
+  /**
+   * Call `complete()` within the `ionInfinite` output event handler when
+   * your async operation has completed. For example, the `loading`
+   * state is while the app is performing an asynchronous operation,
+   * such as receiving more data from an AJAX request to add more items
+   * to a data list. Once the data has been received and UI updated, you
+   * then call this method to signify that the loading has completed.
+   * This method will change the infinite scroll's state from `loading`
+   * to `enabled`.
+   */
+  async complete() {
+    const scrollEl = this.scrollEl;
+    if (!this.isLoading || !scrollEl) {
+      return;
+    }
+    this.isLoading = false;
+    if (this.position === "top") {
+      this.isBusy = true;
+      const prev = scrollEl.scrollHeight - scrollEl.scrollTop;
+      requestAnimationFrame(() => {
+        readTask(() => {
+          const scrollHeight = scrollEl.scrollHeight;
+          const newScrollTop = scrollHeight - prev;
+          requestAnimationFrame(() => {
+            writeTask(() => {
+              scrollEl.scrollTop = newScrollTop;
+              this.isBusy = false;
+              this.didFire = false;
+            });
+          });
+        });
+      });
+    } else {
+      this.didFire = false;
+    }
+  }
+  canStart() {
+    return !this.disabled && !this.isBusy && !!this.scrollEl && !this.isLoading;
+  }
+  enableScrollEvents(shouldListen) {
+    if (this.scrollEl) {
+      if (shouldListen) {
+        this.scrollEl.addEventListener("scroll", this.onScroll);
+      } else {
+        this.scrollEl.removeEventListener("scroll", this.onScroll);
+      }
+    }
+  }
+  render() {
+    const mode = getIonMode(this);
+    const disabled = this.disabled;
+    return h(Host, { key: "e844956795f69be33396ce4480aa7a54ad01b28c", class: {
+      [mode]: true,
+      "infinite-scroll-loading": this.isLoading,
+      "infinite-scroll-enabled": !disabled
+    } });
+  }
+  static get watchers() {
+    return {
+      "threshold": [{
+        "thresholdChanged": 0
+      }],
+      "disabled": [{
+        "disabledChanged": 0
+      }]
+    };
+  }
+};
+InfiniteScroll.style = infiniteScrollCss();
+var infiniteScrollContentIosCss = () => `ion-infinite-scroll-content{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;min-height:84px;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.infinite-loading{margin-left:0;margin-right:0;margin-top:0;margin-bottom:32px;display:none;width:100%}.infinite-loading-text{-webkit-margin-start:32px;margin-inline-start:32px;-webkit-margin-end:32px;margin-inline-end:32px;margin-top:4px;margin-bottom:0}.infinite-scroll-loading ion-infinite-scroll-content>.infinite-loading{display:block}.infinite-scroll-content-ios .infinite-loading-text{color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666))}.infinite-scroll-content-ios .infinite-loading-spinner .spinner-lines-ios line,.infinite-scroll-content-ios .infinite-loading-spinner .spinner-lines-small-ios line,.infinite-scroll-content-ios .infinite-loading-spinner .spinner-crescent circle{stroke:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666))}.infinite-scroll-content-ios .infinite-loading-spinner .spinner-bubbles circle,.infinite-scroll-content-ios .infinite-loading-spinner .spinner-circles circle,.infinite-scroll-content-ios .infinite-loading-spinner .spinner-dots circle{fill:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666))}`;
+var infiniteScrollContentMdCss = () => `ion-infinite-scroll-content{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;min-height:84px;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.infinite-loading{margin-left:0;margin-right:0;margin-top:0;margin-bottom:32px;display:none;width:100%}.infinite-loading-text{-webkit-margin-start:32px;margin-inline-start:32px;-webkit-margin-end:32px;margin-inline-end:32px;margin-top:4px;margin-bottom:0}.infinite-scroll-loading ion-infinite-scroll-content>.infinite-loading{display:block}.infinite-scroll-content-md .infinite-loading-text{color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666))}.infinite-scroll-content-md .infinite-loading-spinner .spinner-lines-md line,.infinite-scroll-content-md .infinite-loading-spinner .spinner-lines-small-md line,.infinite-scroll-content-md .infinite-loading-spinner .spinner-crescent circle{stroke:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666))}.infinite-scroll-content-md .infinite-loading-spinner .spinner-bubbles circle,.infinite-scroll-content-md .infinite-loading-spinner .spinner-circles circle,.infinite-scroll-content-md .infinite-loading-spinner .spinner-dots circle{fill:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666))}`;
+var InfiniteScrollContent = class {
+  constructor(hostRef) {
+    registerInstance(this, hostRef);
+  }
+  customHTMLEnabled = config.get("innerHTMLTemplatesEnabled", ENABLE_HTML_CONTENT_DEFAULT);
+  /**
+   * An animated SVG spinner that shows while loading.
+   */
+  loadingSpinner;
+  /**
+   * Optional text to display while loading.
+   * `loadingText` can accept either plaintext or HTML as a string.
+   * To display characters normally reserved for HTML, they
+   * must be escaped. For example `<Ionic>` would become
+   * `&lt;Ionic&gt;`
+   *
+   * For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
+   *
+   * This property accepts custom HTML as a string.
+   * Content is parsed as plaintext by default.
+   * `innerHTMLTemplatesEnabled` must be set to `true` in the Ionic config
+   * before custom HTML can be used.
+   */
+  loadingText;
+  componentDidLoad() {
+    if (this.loadingSpinner === void 0) {
+      const mode = getIonMode(this);
+      this.loadingSpinner = config.get("infiniteLoadingSpinner", config.get("spinner", mode === "ios" ? "lines" : "crescent"));
+    }
+  }
+  renderLoadingText() {
+    const { customHTMLEnabled, loadingText } = this;
+    if (customHTMLEnabled) {
+      return h("div", { class: "infinite-loading-text", innerHTML: sanitizeDOMString(loadingText) });
+    }
+    return h("div", { class: "infinite-loading-text" }, this.loadingText);
+  }
+  render() {
+    const mode = getIonMode(this);
+    return h(Host, { key: "7c16060dcfe2a0b0fb3e2f8f4c449589a76f1baa", class: {
+      [mode]: true,
+      // Used internally for styling
+      [`infinite-scroll-content-${mode}`]: true
+    } }, h("div", { key: "a94f4d8746e053dc718f97520bd7e48cb316443a", class: "infinite-loading" }, this.loadingSpinner && h("div", { key: "10143d5d2a50a2a2bc5de1cee8e7ab51263bcf23", class: "infinite-loading-spinner" }, h("ion-spinner", { key: "8846e88191690d9c61a0b462889ed56fbfed8b0d", name: this.loadingSpinner })), this.loadingText !== void 0 && this.renderLoadingText()));
+  }
+};
+InfiniteScrollContent.style = {
+  ios: infiniteScrollContentIosCss(),
+  md: infiniteScrollContentMdCss()
+};
+export {
+  InfiniteScroll as ion_infinite_scroll,
+  InfiniteScrollContent as ion_infinite_scroll_content
+};
+//# sourceMappingURL=ion-infinite-scroll_2.entry-KIDKMH2Z.js.map

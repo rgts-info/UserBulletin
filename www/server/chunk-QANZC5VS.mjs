@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{f as s,i as r}from"./chunk-IPQJKCQO.mjs";import{b as n}from"./chunk-EMOJBY5G.mjs";import"./chunk-PGYUQHXF.mjs";import{j as i,k as a}from"./chunk-NDCUGB46.mjs";import"./chunk-YSJSO6JS.mjs";var h=()=>{let o=window;o.addEventListener("statusTap",()=>{i(()=>{let m=o.innerWidth,c=o.innerHeight,e=document.elementFromPoint(m/2,c/2);if(!e)return;let t=s(e);t&&new Promise(d=>n(t,d)).then(()=>{a(async()=>{t.style.setProperty("--overflow","hidden"),await r(t,300),t.style.removeProperty("--overflow")})})})})};export{h as startStatusTap};

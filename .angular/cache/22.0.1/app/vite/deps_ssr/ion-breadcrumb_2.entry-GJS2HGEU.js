@@ -1,0 +1,308 @@
+import { createRequire } from 'module';const require = createRequire(import.meta.url);
+import {
+  chevronForwardOutline,
+  ellipsisHorizontal
+} from "./chunk-T4PHCYIF.js";
+import {
+  inheritAriaAttributes
+} from "./chunk-KZSWY5U2.js";
+import "./chunk-L65IGNW5.js";
+import {
+  createColorClasses,
+  hostContext,
+  openURL
+} from "./chunk-PYWP5KEC.js";
+import {
+  getIonMode
+} from "./chunk-NP2DGJVA.js";
+import {
+  Host,
+  createEvent,
+  getElement,
+  h,
+  registerInstance
+} from "./chunk-5XV4S2PZ.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-EEKZWN3V.js";
+
+// node_modules/@ionic/core/dist/esm/ion-breadcrumb_2.entry.js
+var breadcrumbIosCss = () => `:host{display:-ms-flexbox;display:flex;-ms-flex:0 0 auto;flex:0 0 auto;-ms-flex-align:center;align-items:center;color:var(--color);font-size:1rem;font-weight:400;line-height:1.5}.breadcrumb-native{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;width:100%;outline:none;background:inherit}:host(.breadcrumb-disabled){cursor:default;opacity:0.5;pointer-events:none}:host(.breadcrumb-active){color:var(--color-active)}:host(.ion-focused){color:var(--color-focused)}:host(.ion-focused) .breadcrumb-native{background:var(--background-focused)}@media (any-hover: hover){:host(.ion-activatable:hover){color:var(--color-hover)}:host(.ion-activatable.in-breadcrumbs-color:hover),:host(.ion-activatable.ion-color:hover){color:var(--ion-color-shade)}}.breadcrumb-separator{display:-ms-inline-flexbox;display:inline-flex}:host(.breadcrumb-collapsed) .breadcrumb-native{display:none}:host(.in-breadcrumbs-color),:host(.in-breadcrumbs-color.breadcrumb-active){color:var(--ion-color-base)}:host(.in-breadcrumbs-color) .breadcrumb-separator{color:var(--ion-color-base)}:host(.ion-color){color:var(--ion-color-base)}:host(.in-toolbar-color),:host(.in-toolbar-color) .breadcrumb-separator{color:rgba(var(--ion-color-contrast-rgb), 0.8)}:host(.in-toolbar-color.breadcrumb-active){color:var(--ion-color-contrast)}.breadcrumbs-collapsed-indicator{padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;-webkit-margin-start:14px;margin-inline-start:14px;-webkit-margin-end:14px;margin-inline-end:14px;margin-top:0;margin-bottom:0;display:-ms-flexbox;display:flex;-ms-flex:1 1 100%;flex:1 1 100%;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:32px;height:18px;border:0;outline:none;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none}.breadcrumbs-collapsed-indicator ion-icon{margin-top:1px;font-size:1.375rem}:host{--color:var(--ion-color-step-850, var(--ion-text-color-step-150, #2d4665));--color-active:var(--ion-text-color, #03060b);--color-hover:var(--ion-text-color, #03060b);--color-focused:var(--color-active);--background-focused:var(--ion-color-step-50, var(--ion-background-color-step-50, rgba(233, 237, 243, 0.7)));font-size:clamp(16px, 1rem, 22px)}:host(.breadcrumb-active){font-weight:600}.breadcrumb-native{border-radius:4px;-webkit-padding-start:12px;padding-inline-start:12px;-webkit-padding-end:12px;padding-inline-end:12px;padding-top:5px;padding-bottom:5px;border:1px solid transparent}:host(.ion-focused) .breadcrumb-native{border-radius:8px}:host(.in-breadcrumbs-color.ion-focused) .breadcrumb-native,:host(.ion-color.ion-focused) .breadcrumb-native{background:rgba(var(--ion-color-base-rgb), 0.1);color:var(--ion-color-base)}:host(.ion-focused) ::slotted(ion-icon),:host(.in-breadcrumbs-color.ion-focused) ::slotted(ion-icon),:host(.ion-color.ion-focused) ::slotted(ion-icon){color:var(--ion-color-step-750, var(--ion-text-color-step-250, #445b78))}.breadcrumb-separator{color:var(--ion-color-step-550, var(--ion-text-color-step-450, #73849a))}::slotted(ion-icon){color:var(--ion-color-step-400, var(--ion-text-color-step-600, #92a0b3));font-size:min(1.125rem, 21.6px)}::slotted(ion-icon[slot=start]){-webkit-margin-end:8px;margin-inline-end:8px}::slotted(ion-icon[slot=end]){-webkit-margin-start:8px;margin-inline-start:8px}:host(.breadcrumb-active) ::slotted(ion-icon){color:var(--ion-color-step-850, var(--ion-text-color-step-150, #242d39))}.breadcrumbs-collapsed-indicator{border-radius:4px;background:var(--ion-color-step-100, var(--ion-background-color-step-100, #e9edf3));color:var(--ion-color-step-550, var(--ion-text-color-step-450, #73849a))}.breadcrumbs-collapsed-indicator:hover{opacity:0.45}.breadcrumbs-collapsed-indicator:focus{background:var(--ion-color-step-150, var(--ion-background-color-step-150, #d9e0ea))}.breadcrumbs-collapsed-indicator ion-icon{font-size:min(1.375rem, 22px)}`;
+var breadcrumbMdCss = () => `:host{display:-ms-flexbox;display:flex;-ms-flex:0 0 auto;flex:0 0 auto;-ms-flex-align:center;align-items:center;color:var(--color);font-size:1rem;font-weight:400;line-height:1.5}.breadcrumb-native{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;width:100%;outline:none;background:inherit}:host(.breadcrumb-disabled){cursor:default;opacity:0.5;pointer-events:none}:host(.breadcrumb-active){color:var(--color-active)}:host(.ion-focused){color:var(--color-focused)}:host(.ion-focused) .breadcrumb-native{background:var(--background-focused)}@media (any-hover: hover){:host(.ion-activatable:hover){color:var(--color-hover)}:host(.ion-activatable.in-breadcrumbs-color:hover),:host(.ion-activatable.ion-color:hover){color:var(--ion-color-shade)}}.breadcrumb-separator{display:-ms-inline-flexbox;display:inline-flex}:host(.breadcrumb-collapsed) .breadcrumb-native{display:none}:host(.in-breadcrumbs-color),:host(.in-breadcrumbs-color.breadcrumb-active){color:var(--ion-color-base)}:host(.in-breadcrumbs-color) .breadcrumb-separator{color:var(--ion-color-base)}:host(.ion-color){color:var(--ion-color-base)}:host(.in-toolbar-color),:host(.in-toolbar-color) .breadcrumb-separator{color:rgba(var(--ion-color-contrast-rgb), 0.8)}:host(.in-toolbar-color.breadcrumb-active){color:var(--ion-color-contrast)}.breadcrumbs-collapsed-indicator{padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;-webkit-margin-start:14px;margin-inline-start:14px;-webkit-margin-end:14px;margin-inline-end:14px;margin-top:0;margin-bottom:0;display:-ms-flexbox;display:flex;-ms-flex:1 1 100%;flex:1 1 100%;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:32px;height:18px;border:0;outline:none;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none}.breadcrumbs-collapsed-indicator ion-icon{margin-top:1px;font-size:1.375rem}:host{--color:var(--ion-color-step-600, var(--ion-text-color-step-400, #677483));--color-active:var(--ion-text-color, #03060b);--color-hover:var(--ion-text-color, #03060b);--color-focused:var(--ion-color-step-800, var(--ion-text-color-step-200, #35404e));--background-focused:var(--ion-color-step-50, var(--ion-background-color-step-50, #fff))}:host(.breadcrumb-active){font-weight:500}.breadcrumb-native{-webkit-padding-start:12px;padding-inline-start:12px;-webkit-padding-end:12px;padding-inline-end:12px;padding-top:6px;padding-bottom:6px}.breadcrumb-separator{-webkit-margin-start:10px;margin-inline-start:10px;-webkit-margin-end:10px;margin-inline-end:10px;margin-top:-1px}:host(.ion-focused) .breadcrumb-native{border-radius:4px;-webkit-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.12);box-shadow:0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.12)}.breadcrumb-separator{color:var(--ion-color-step-550, var(--ion-text-color-step-450, #73849a))}::slotted(ion-icon){color:var(--ion-color-step-550, var(--ion-text-color-step-450, #7d8894));font-size:1.125rem}::slotted(ion-icon[slot=start]){-webkit-margin-end:8px;margin-inline-end:8px}::slotted(ion-icon[slot=end]){-webkit-margin-start:8px;margin-inline-start:8px}:host(.breadcrumb-active) ::slotted(ion-icon){color:var(--ion-color-step-850, var(--ion-text-color-step-150, #222d3a))}.breadcrumbs-collapsed-indicator{border-radius:2px;background:var(--ion-color-step-100, var(--ion-background-color-step-100, #eef1f3));color:var(--ion-color-step-550, var(--ion-text-color-step-450, #73849a))}.breadcrumbs-collapsed-indicator:hover{opacity:0.7}.breadcrumbs-collapsed-indicator:focus{background:var(--ion-color-step-150, var(--ion-background-color-step-150, #dfe5e8))}`;
+var Breadcrumb = class {
+  constructor(hostRef) {
+    registerInstance(this, hostRef);
+    this.ionFocus = createEvent(this, "ionFocus", 7);
+    this.ionBlur = createEvent(this, "ionBlur", 7);
+    this.collapsedClick = createEvent(this, "collapsedClick", 7);
+  }
+  inheritedAttributes = {};
+  collapsedRef;
+  /** @internal */
+  collapsed = false;
+  /** @internal */
+  last;
+  /** @internal */
+  showCollapsedIndicator;
+  get el() {
+    return getElement(this);
+  }
+  /**
+   * The color to use from your application's color palette.
+   * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
+   * For more information on colors, see [theming](/docs/theming/basics).
+   */
+  color;
+  /**
+   * If `true`, the breadcrumb will take on a different look to show that
+   * it is the currently active breadcrumb. Defaults to `true` for the
+   * last breadcrumb if it is not set on any.
+   */
+  active = false;
+  /**
+   * If `true`, the user cannot interact with the breadcrumb.
+   */
+  disabled = false;
+  /**
+   * This attribute instructs browsers to download a URL instead of navigating to
+   * it, so the user will be prompted to save it as a local file. If the attribute
+   * has a value, it is used as the pre-filled file name in the Save prompt
+   * (the user can still change the file name if they want).
+   */
+  download;
+  /**
+   * Contains a URL or a URL fragment that the hyperlink points to.
+   * If this property is set, an anchor tag will be rendered.
+   */
+  href;
+  /**
+   * Specifies the relationship of the target object to the link object.
+   * The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
+   */
+  rel;
+  /**
+   * If true, show a separator between this breadcrumb and the next.
+   * Defaults to `true` for all breadcrumbs except the last.
+   */
+  separator;
+  /**
+   * Specifies where to display the linked URL.
+   * Only applies when an `href` is provided.
+   * Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+   */
+  target;
+  /**
+   * When using a router, it specifies the transition direction when navigating to
+   * another page using `href`.
+   */
+  routerDirection = "forward";
+  /**
+   * When using a router, it specifies the transition animation when navigating to
+   * another page using `href`.
+   */
+  routerAnimation;
+  /**
+   * Emitted when the breadcrumb has focus.
+   */
+  ionFocus;
+  /**
+   * Emitted when the breadcrumb loses focus.
+   */
+  ionBlur;
+  /**
+   * Emitted when the collapsed indicator is clicked on.
+   * `ion-breadcrumbs` will listen for this and emit ionCollapsedClick.
+   * Normally we could just emit this as `ionCollapsedClick`
+   * and let the event bubble to `ion-breadcrumbs`,
+   * but if the event custom event is not set on `ion-breadcrumbs`,
+   * TypeScript will throw an error in user applications.
+   * @internal
+   */
+  collapsedClick;
+  componentWillLoad() {
+    this.inheritedAttributes = inheritAriaAttributes(this.el);
+  }
+  isClickable() {
+    return this.href !== void 0;
+  }
+  onFocus = () => {
+    this.ionFocus.emit();
+  };
+  onBlur = () => {
+    this.ionBlur.emit();
+  };
+  collapsedIndicatorClick = () => {
+    this.collapsedClick.emit({ ionShadowTarget: this.collapsedRef });
+  };
+  render() {
+    const { color, active, collapsed, disabled, download, el, inheritedAttributes, last, routerAnimation, routerDirection, separator, showCollapsedIndicator, target } = this;
+    const clickable = this.isClickable();
+    const TagType = this.href === void 0 ? "span" : "a";
+    const href = disabled ? void 0 : this.href;
+    const mode = getIonMode(this);
+    const attrs = TagType === "span" ? {} : {
+      download,
+      href,
+      target
+    };
+    const showSeparator = last ? false : collapsed ? showCollapsedIndicator && !last ? true : false : separator;
+    return h(Host, { key: "32ca61c83721dff52b5e97171ed449dce3584a55", onClick: (ev) => openURL(href, ev, routerDirection, routerAnimation), "aria-disabled": disabled ? "true" : null, class: createColorClasses(color, {
+      [mode]: true,
+      "breadcrumb-active": active,
+      "breadcrumb-collapsed": collapsed,
+      "breadcrumb-disabled": disabled,
+      "in-breadcrumbs-color": hostContext("ion-breadcrumbs[color]", el),
+      "in-toolbar": hostContext("ion-toolbar", this.el),
+      "in-toolbar-color": hostContext("ion-toolbar[color]", this.el),
+      "ion-activatable": clickable,
+      "ion-focusable": clickable
+    }) }, h(TagType, __spreadValues(__spreadProps(__spreadValues({ key: "479feb845f4a6d8009d5422b33eb423730b9722b" }, attrs), { class: "breadcrumb-native", part: "native", disabled, onFocus: this.onFocus, onBlur: this.onBlur }), inheritedAttributes), h("slot", { key: "3c5dcaeb0d258235d1b7707868026ff1d1404099", name: "start" }), h("slot", { key: "f1cfb934443cd97dc220882c5e3596ea879d66cf" }), h("slot", { key: "539710121b5b1f3ee8d4c24a9651b67c2ae08add", name: "end" })), showCollapsedIndicator && h("button", { key: "ed53a95ccd89022c8b7bee0658a221ec62a5c73b", part: "collapsed-indicator", "aria-label": "Show more breadcrumbs", onClick: () => this.collapsedIndicatorClick(), ref: (collapsedEl) => this.collapsedRef = collapsedEl, class: {
+      "breadcrumbs-collapsed-indicator": true
+    } }, h("ion-icon", { key: "a849e1142a86f06f207cf11662fa2a560ab7fc6a", "aria-hidden": "true", icon: ellipsisHorizontal, lazy: false })), showSeparator && /**
+     * Separators should not be announced by narrators.
+     * We add aria-hidden on the span so that this applies
+     * to any custom separators too.
+     */
+    h("span", { key: "fc3c741cb01fafef8b26046c7ee5b190efc69a7c", class: "breadcrumb-separator", part: "separator", "aria-hidden": "true" }, h("slot", { key: "4871932ae1dae520767e0713e7cee2d11b0bba6d", name: "separator" }, mode === "ios" ? h("ion-icon", { icon: chevronForwardOutline, lazy: false, "flip-rtl": true }) : h("span", null, "/"))));
+  }
+};
+Breadcrumb.style = {
+  ios: breadcrumbIosCss(),
+  md: breadcrumbMdCss()
+};
+var breadcrumbsIosCss = () => `:host{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center}:host(.in-toolbar-color),:host(.in-toolbar-color) .breadcrumbs-collapsed-indicator ion-icon{color:var(--ion-color-contrast)}:host(.in-toolbar-color) .breadcrumbs-collapsed-indicator{background:rgba(var(--ion-color-contrast-rgb), 0.11)}:host(.in-toolbar){-webkit-padding-start:20px;padding-inline-start:20px;-webkit-padding-end:20px;padding-inline-end:20px;padding-top:0;padding-bottom:0;-ms-flex-pack:center;justify-content:center}`;
+var breadcrumbsMdCss = () => `:host{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center}:host(.in-toolbar-color),:host(.in-toolbar-color) .breadcrumbs-collapsed-indicator ion-icon{color:var(--ion-color-contrast)}:host(.in-toolbar-color) .breadcrumbs-collapsed-indicator{background:rgba(var(--ion-color-contrast-rgb), 0.11)}:host(.in-toolbar){-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:8px;padding-inline-end:8px;padding-top:0;padding-bottom:0}`;
+var Breadcrumbs = class {
+  constructor(hostRef) {
+    registerInstance(this, hostRef);
+    this.ionCollapsedClick = createEvent(this, "ionCollapsedClick", 7);
+  }
+  collapsed;
+  activeChanged;
+  get el() {
+    return getElement(this);
+  }
+  /**
+   * The color to use from your application's color palette.
+   * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
+   * For more information on colors, see [theming](/docs/theming/basics).
+   */
+  color;
+  /**
+   * The maximum number of breadcrumbs to show before collapsing.
+   */
+  maxItems;
+  /**
+   * The number of breadcrumbs to show before the collapsed indicator.
+   * If `itemsBeforeCollapse` + `itemsAfterCollapse` is greater than `maxItems`,
+   * the breadcrumbs will not be collapsed.
+   */
+  itemsBeforeCollapse = 1;
+  /**
+   * The number of breadcrumbs to show after the collapsed indicator.
+   * If `itemsBeforeCollapse` + `itemsAfterCollapse` is greater than `maxItems`,
+   * the breadcrumbs will not be collapsed.
+   */
+  itemsAfterCollapse = 1;
+  /**
+   * Emitted when the collapsed indicator is clicked on.
+   */
+  ionCollapsedClick;
+  onCollapsedClick(ev) {
+    const breadcrumbs = this.getBreadcrumbs();
+    const collapsedBreadcrumbs = breadcrumbs.filter((breadcrumb) => breadcrumb.collapsed);
+    this.ionCollapsedClick.emit(__spreadProps(__spreadValues({}, ev.detail), { collapsedBreadcrumbs }));
+  }
+  maxItemsChanged() {
+    this.resetActiveBreadcrumb();
+    this.breadcrumbsInit();
+  }
+  componentWillLoad() {
+    this.breadcrumbsInit();
+  }
+  breadcrumbsInit = () => {
+    this.setBreadcrumbSeparator();
+    this.setMaxItems();
+  };
+  resetActiveBreadcrumb = () => {
+    const breadcrumbs = this.getBreadcrumbs();
+    const activeBreadcrumb = breadcrumbs.find((breadcrumb) => breadcrumb.active);
+    if (activeBreadcrumb && this.activeChanged) {
+      activeBreadcrumb.active = false;
+    }
+  };
+  setMaxItems = () => {
+    const { itemsAfterCollapse, itemsBeforeCollapse, maxItems } = this;
+    const breadcrumbs = this.getBreadcrumbs();
+    for (const breadcrumb of breadcrumbs) {
+      breadcrumb.showCollapsedIndicator = false;
+      breadcrumb.collapsed = false;
+    }
+    const shouldCollapse = maxItems !== void 0 && breadcrumbs.length > maxItems && itemsBeforeCollapse + itemsAfterCollapse <= maxItems;
+    if (shouldCollapse) {
+      breadcrumbs.forEach((breadcrumb, index) => {
+        if (index === itemsBeforeCollapse) {
+          breadcrumb.showCollapsedIndicator = true;
+        }
+        if (index >= itemsBeforeCollapse && index < breadcrumbs.length - itemsAfterCollapse) {
+          breadcrumb.collapsed = true;
+        }
+      });
+    }
+  };
+  setBreadcrumbSeparator = () => {
+    const { itemsAfterCollapse, itemsBeforeCollapse, maxItems } = this;
+    const breadcrumbs = this.getBreadcrumbs();
+    const active = breadcrumbs.find((breadcrumb) => breadcrumb.active);
+    for (const breadcrumb of breadcrumbs) {
+      const last = maxItems !== void 0 && itemsAfterCollapse === 0 ? breadcrumb === breadcrumbs[itemsBeforeCollapse] : breadcrumb === breadcrumbs[breadcrumbs.length - 1];
+      breadcrumb.last = last;
+      const separator = breadcrumb.separator !== void 0 ? breadcrumb.separator : last ? void 0 : true;
+      breadcrumb.separator = separator;
+      if (!active && last) {
+        breadcrumb.active = true;
+        this.activeChanged = true;
+      }
+    }
+  };
+  getBreadcrumbs = () => {
+    return Array.from(this.el.querySelectorAll("ion-breadcrumb"));
+  };
+  slotChanged = () => {
+    this.resetActiveBreadcrumb();
+    this.breadcrumbsInit();
+  };
+  render() {
+    const { color, collapsed } = this;
+    const mode = getIonMode(this);
+    return h(Host, { key: "fe64e9cdf597ede2db140bf5fa05a0359d82db57", class: createColorClasses(color, {
+      [mode]: true,
+      "in-toolbar": hostContext("ion-toolbar", this.el),
+      "in-toolbar-color": hostContext("ion-toolbar[color]", this.el),
+      "breadcrumbs-collapsed": collapsed
+    }) }, h("slot", { key: "a2c99b579e339055c50a613d5c6b61032f5ddffe", onSlotchange: this.slotChanged }));
+  }
+  static get watchers() {
+    return {
+      "maxItems": [{
+        "maxItemsChanged": 0
+      }],
+      "itemsBeforeCollapse": [{
+        "maxItemsChanged": 0
+      }],
+      "itemsAfterCollapse": [{
+        "maxItemsChanged": 0
+      }]
+    };
+  }
+};
+Breadcrumbs.style = {
+  ios: breadcrumbsIosCss(),
+  md: breadcrumbsMdCss()
+};
+export {
+  Breadcrumb as ion_breadcrumb,
+  Breadcrumbs as ion_breadcrumbs
+};
+//# sourceMappingURL=ion-breadcrumb_2.entry-GJS2HGEU.js.map

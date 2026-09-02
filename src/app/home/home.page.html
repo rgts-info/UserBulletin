@@ -1,0 +1,2744 @@
+<ion-content [fullscreen]="true" class="ion-padding bg-matrix-theme">
+  
+  <!-- Premium Hero Branding Layout Container -->
+  <div class="hero-container">
+    <h1 class="main-title">走地通-RGTS(Prod)</h1>
+    <h2 class="sub-title">新世代賽馬大數據與矩陣系統</h2>
+    <p class="brand-hook">專為現代理性馬迷而設 • 臨場實時彩池追蹤</p>
+  </div>
+
+  <!-- Primary Mobile Installation Action Box -->
+  <div class="download-action-wrapper">
+    <a href="https://google.com" target="_blank" class="store-badge-btn">
+      <span class="badge-icon">🤖</span>
+      <div class="badge-text">
+        <small>📥 DOWNLOAD FROM GOOGLE PLAY</small>
+        <strong>免費下載走地通數據 App</strong>
+      </div>
+    </a>
+  </div>
+
+  <!-- Polished Ultra-Simple Quickstart Checklist Wrapper -->
+  <div class="guide-card-wrapper text-container-card">
+    <div class="guide-card-header">🚀 30秒極速入門指南</div>
+    <div class="guide-card-body">
+      <ol class="punchy-ordered-list">
+        <li><strong>開啟走地：</strong> 由主頁按下【走地掣】進入即場賽事。</li>
+        <li><strong>鎖定賠率：</strong> 於賽事選擇頁中按下【賠率掣】。</li>
+        <li><strong>數據自動排序：</strong> 進入介面後按【獨贏走勢掣】。系統會全面自動化為出賽馬進行大數據即時流速追蹤，免去一切手動繁複計算。</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- The "Fast" EasyPick Colored Matrix Visual Interface Guide Block -->
+  <div class="guide-card-wrapper highlight-container-card">
+    <div class="guide-card-header">🟢 走地易 (EasyPick) — 看圖選膽法</div>
+    <div class="guide-card-body">
+      <p class="simple-rule-p">
+        後台 AI 100% 同步馬會投注額，自動交叉比對「大資金淨流入流速」與「AI內在實力狀態」。<strong>您只需要盯緊介面上的兩個色彩提示，直接從中挑選您的核心【馬膽 (Banker)】：</strong>
+      </p>
+
+      <!-- Mock Visual Color Box Grid Layout for Casual Users -->
+      <div class="mock-ui-display">
+        <div class="ui-row">
+          <span class="ui-color-box cell-green">🟢 綠色高水提示</span>
+          <span class="ui-desc">代表臨場「大資金淨流入」流速異常狂飆，超越公眾預期，是極高勝率的爆冷訊號！</span>
+        </div>
+        <div class="ui-row" style="margin-top: 15px;">
+          <span class="ui-color-box cell-gold">🟡 黃金旺指提示</span>
+          <span class="ui-desc">代表該駒綜合騎練、檔位等當日走勢為最高流速前三位。全季實證每賽日穩開 <strong>8.38 匹次</strong>！</span>
+        </div>
+      </div>
+
+      <p class="final-shortcut-p">
+        不需要複雜的研究，看見哪匹馬被色彩矩陣亮起，它就是您當前場次最穩健的去馬指標！
+      </p>
+
+      <!-- Deep redirect link is preserved exclusively for high-intent analysts -->
+      <ion-button routerLink="/EasyPick" class="action-btn custom-warning-btn">
+        📖 深入查看：EasyPick 實戰大數據教學與真實彩果紀錄 →
+      </ion-button>
+    </div>
+  </div>
+
+
+
+  <!-- From Win 11 test-quickstart -->
+  <!-- NOTE: 08052026 Bkup for review the previous Quick Start content, this version contained the most updated 
+       img tag styling by Copilot
+        
+       Other backup files: 
+       BKUP-08052026-ts.md
+       BKUP-08052026-scss.md
+  -->
+  
+  <div style="overflow: scroll;">
+    <!-- The H1 stays outside and is unaffected by the image scaling -->
+    <!-- <h1 style="color: black; text-align: center; margin-bottom: 20px;">
+      World Pool Quick Start Guide
+    </h1> -->
+
+    <ion-button style="font-weight: bolder;" (click)="toggleLanguage()" color="primary">
+      {{ currentLang === 'zh' ? 'English' : '繁體中文' }}
+    </ion-button>
+
+    <!-- START: 免費試用步驟 -->
+    <!-- START: 免費試用步驟 -->
+
+
+
+    <!-- <h1 style="text-align: center;color: blue; 
+      font-size: 33px; margin-bottom: 0px;">
+      <span *ngIf="currentLang === 'zh'">免費試用步驟(香港賽事)</span>
+      <span *ngIf="currentLang === 'en'">Free Trial Guide <br> 
+        <span style="font-size: 24px;">
+          (Hong Kong races)
+        </span>
+      </span>
+    </h1> -->
+
+  <div class="guide-card-wrapper highlight-container-card">
+    <div *ngIf="currentLang === 'zh'" class="guide-card-header">🟢 免費試用步驟(香港賽事)</div>
+    <div *ngIf="currentLang === 'en'" class="guide-card-header" style="font-size: 18px !important">
+      🟢 Free Trial Guide (Hong Kong races)
+    </div>
+  </div>
+
+    <div class="scrollable-row-container">
+      <div class="custom-row">
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-1-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-1-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-1-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-1-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-1-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P1"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-1-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-1-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-1-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-1-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-1-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P1"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+
+        <!-- START: P2 -->
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-2-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-2-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-2-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-2-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-2-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P2"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-2-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-2-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-2-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-2-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-2-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P2"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+        <!-- END: P2 -->
+
+        <!-- START: P3 -->
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-3-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-3-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-3-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-3-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-3-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P3"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-3-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-3-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-3-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-3-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-3-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P3"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+        <!-- END: P3 -->
+
+        <!-- START: P4 -->
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-4-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-4-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-4-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-4-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-4-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P4"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-4-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-4-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-4-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-4-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-4-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P4"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+        <!-- END: P4 -->
+
+        <!-- START: P5 -->
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-5-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-5-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-5-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-5-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-5-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P5"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-5-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-5-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-5-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-5-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-5-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P5"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+        <!-- END: P5 -->
+
+        <!-- START: P6 -->
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-6-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-6-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-6-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-6-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-6-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P6"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-6-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-6-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-6-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-6-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-6-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P6"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+        <!-- END: P6 -->
+
+        <!-- START: P7 -->
+        <div class="custom-col">
+          <img 
+            *ngIf="currentLang === 'en'"
+            src="assets/img/Free-Trail-ZH-7-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-7-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-7-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-7-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-7-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="Free Trail-P7"
+            class="responsive-img-no-max-height"
+          />
+
+          <img 
+            *ngIf="currentLang === 'zh'"
+            src="assets/img/Free-Trail-ZH-7-1080-2640.webp"
+            srcset="
+              assets/img/Free-Trail-ZH-7-360-878.webp 360w,
+              assets/img/Free-Trail-ZH-7-496-1210.webp 496w,
+              assets/img/Free-Trail-ZH-7-992-2424.webp 992w,
+              assets/img/Free-Trail-ZH-7-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="免費試用-P7"
+            class="responsive-img-no-max-height"
+          />
+        </div>
+        <!-- END: P7 -->
+      </div>
+      <!-- END: <div class="custom-row"> -->
+    </div>
+    <!-- END: <div class="scrollable-row-container"> -->
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            User Registration: Free Trial Activation Steps
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <!-- Optional: Keep your screenshot header here if needed -->
+          <!-- <img style="width: 100%; border-radius: 8px; margin-bottom: 15px;" alt="Free Trial Guide" src="assets/img/Snapshot_12.webp" /> -->
+
+          <ol class="quickStarted" style="padding-inline-start: 20px; font-size: 16px; color: #333; line-height: 1.5;">
+            <li style="margin-bottom: 14px;">
+              <strong>Access Live Interface:</strong> From the application Home Page, tap the <strong>"Live Play"</strong> button (Image 1) to open the live racing dashboard.
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>Claim Free Access:</strong> On the Race Selection Page, tap the <strong>"Free Trial"</strong> button (Image 2). 
+              <span style="display: block; margin-top: 8px; padding: 10px; background-color: #fff8e1; border-left: 4px solid #ffb300; font-size: 14px; color: #5d4037; border-radius: 0 4px 4px 0;">
+                ⚠️ <strong>Important Note regarding Quota Limits:</strong> If the "Free Trial" button appears greyed out, it means the complimentary quota for this specific race day has been completely exhausted. Free trial registrations open immediately on <strong>Declarations Day</strong> for each meeting and operate on a strict first-come, first-served basis. If the quota is full, you can purchase data access instantly by tapping the <strong>"Day Pass"</strong> button on the Home Page.
+              </span>
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>Select Package tier:</strong> On the Package Selection Page, select the <strong>"Plan All"</strong> option and tap the <strong>"Confirm"</strong> button (Image 3).
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>Account Authentication:</strong> On the Login/Registration Page, enter your registered email address and password, then tap <strong>"Confirm"</strong>. If you do not have an account yet, tap the <strong>"Registration"</strong> button (Image 4) to create one instantly.
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>Enter Trading Zone:</strong> Upon successful authentication, tap the <strong>"Enter Trading Zone"</strong> button (Image 5) to proceed.
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>Authorize Trial:</strong> Inside the main transaction panel, tap the prominent <strong>"Blue Button"</strong> (Image 6) to initialize your free trial day pass.
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>Activation Complete:</strong> Your complimentary access is now fully authorized! Tap the <strong>"Go to Home Page"</strong> button (Image 7) to start tracking live odds data.
+            </li>
+          </ol>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh'">
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            用戶免費試用登記步驟
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <!-- 如需保留頂部附圖，可解開此註解 -->
+          <!-- <img style="width: 100%; border-radius: 8px; margin-bottom: 15px;" alt="免費試用教學" src="assets/img/Snapshot_12.webp" /> -->
+
+          <ol class="quickStarted" style="padding-inline-start: 20px; font-size: 16px; color: #333; line-height: 1.5;">
+            <li style="margin-bottom: 14px;">
+              <strong>進入走地介面：</strong>由主頁按<strong>「走地」</strong>掣（圖片1）進入實戰數據中心。
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>登記免費試用：</strong>於賽事選擇頁中按<strong>「免費試用」</strong>掣（圖片2）。
+              <span style="display: block; margin-top: 8px; padding: 10px; background-color: #fff8e1; border-left: 4px solid #ffb300; font-size: 14px; color: #5d4037; border-radius: 0 4px 4px 0;">
+                ⚠️  <strong>注意（名額限制）：</strong>如「免費試用」掣顯示為灰色，代表該賽馬日嘅免費名額已經全數爆滿。免費試用登記會喺每個賽馬日前嘅<strong>排位日</strong>開始接受登記，額滿即止。如果名額已滿，用戶可隨時於首頁按<strong>「日票通」</strong>掣購買即日數據服務。
+              </span>
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>選擇服務套餐：</strong>於套餐選擇頁中選擇<strong>「全餐」</strong>並按<strong>「確認」</strong>掣（圖片3）。
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>登入或建立帳戶：</strong>於登入/註冊頁中輸入已註冊嘅電郵地址同密碼，然後按<strong>「確認」</strong>。未註冊嘅新用戶，請按<strong>「註冊」</strong>掣（圖片4）建立新帳戶。
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>進入交易區域：</strong>成功登入後，按<strong>「進入交易區」</strong>掣（圖片5）。
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>確認啟動數據：</strong>於交易頁面中，直接按<strong>「藍色」</strong>掣（圖片6）以啟動免費試用權限。
+            </li>
+            <li style="margin-bottom: 14px;">
+              <strong>完成登記程序：</strong>免費試用步驟已全部完成！依家按<strong>「進入主頁」</strong>掣（圖片7），即可開始體驗即場走地數據分析。
+            </li>
+          </ol>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- END: 免費試用步驟 -->
+
+
+
+    <!-- NOTE: 06112026 Took out *ngIf= "running_on_mobile_boolean" -->
+    <!-- <h1 style="text-align: center;color: blue; 
+      font-size: 33px; margin-bottom: 0px;">
+      <span *ngIf="currentLang === 'zh'">海外賽事(快速入門)</span>
+      <span *ngIf="currentLang === 'en'">World Pool Races <br> 
+        <span style="font-size: 24px;">
+          (Quick Start Guide)
+        </span>
+      </span>
+    </h1> -->
+
+  <div class="guide-card-wrapper highlight-container-card">
+    <div *ngIf="currentLang === 'zh'" class="guide-card-header">🚀 海外賽事(快速入門)</div>
+    <div *ngIf="currentLang === 'en'" class="guide-card-header" style="font-size: 18px !important">
+      🚀 World Pool Races (Quick Start Guide)
+    </div>
+  </div>
+
+    <!-- === GOOGLE ADS LANDING ALERT: INTERNATION UPGRADE ALERT === -->
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <ion-card style="width: 100%; margin: 10px; border: 2px solid #0288d1; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <ion-card-header style="padding-bottom: 8px; background-color: #0288d1;">
+          <ion-card-title style="font-size: 18px; font-weight: bold; color: white;">
+            🇬🇧 Welcome Royal Ascot Analysts
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="padding-top: 14px; font-size: 15px; color: #333; line-height: 1.4;">
+          <p style="margin-top: 0; margin-bottom: 10px; font-weight: bold; color: #0288d1;">
+            Track Royal Ascot Today — Receive Full Hong Kong Analytics Updates Automatically!
+          </p>
+          <p style="margin-bottom: 10px;">
+            Use our live World Pool data interface to track <strong>Royal Ascot</strong> performance matrices this week. 
+          </p>
+          <p style="margin-bottom: 5px;">
+            <strong>Important:</strong> Please complete your <strong>Free Trial registration inside the app today</strong>. By registering your email for the World Pool trial, our database will automatically whitelist you to receive full English documentation, user guides, and launch notifications for our ultra-powerful Hong Kong Racing Analytics Core the moment it drops next week!
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- This container replaces ion-row and allows horizontal/vertical finger panning -->
+    <div class="scrollable-row-container">
+      <div class="custom-row">
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P1</h2>
+          <!-- <img src="assets/img/RGTS-QS-WP-1-1080-2640.webp" class="zoom-image" alt="P1" /> -->
+
+          <img 
+            src="assets/img/RGTS-QS-WP-1-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-1-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-1-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-1-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-1-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-1-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-1-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-1-1080-2640.webp 1080w
+            " 
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px" 
+            alt="World Pool Quick Start" 
+            class="responsive-img-no-max-height"
+          />
+
+
+          <!-- NOTE: 08052026 From Copilot, Use fewer images, added a new image size 992 X 2424
+                              and it's corresponding Powerpoints file: 
+                              E:\Project\RGTS Quick Start Materials\Powerpoints\WP-SH-42\RGTS-QS-WP-SH-42-992-2424.pptx
+
+                To change the png to webp in Win 11, open powershell and execute the followings: 
+                PS E:\ionic_6\quickstartzoom\src\assets\img> magick mogrify -format webp *.png
+                PS E:\ionic_6\quickstartzoom\src\assets\img> Remove-Item *.png -Force
+
+            <img 
+              *ngIf="currentLang === 'en'"
+              src="assets/img/RGTS-QS-WP-1-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-1-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-1-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-1-992-2424.webp 992w,
+                assets/img/RGTS-QS-WP-1-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, 
+                    (max-width: 768px) 450px, 
+                    496px"
+              alt="World Pool-Quick Start-P1"
+              class="responsive-img-no-max-height"
+            />
+
+            <img 
+              *ngIf="currentLang === 'zh'"
+              src="assets/img/RGTS-QS-WP-1-zh-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-1-zh-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-1-zh-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-1-zh-992-2424.webp 992w,
+                assets/img/RGTS-QS-WP-1-zh-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, 
+                    (max-width: 768px) 450px, 
+                    496px"
+              alt="海外賽事-快速入門-P1"
+              class="responsive-img-no-max-height"
+            />
+         
+          -->
+
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P2</h2>
+          <!-- <img src="assets/img/RGTS-QS-WP-2-1080-2640.webp" class="zoom-image" alt="P2" /> -->
+          <img 
+            src="assets/img/RGTS-QS-WP-2-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-2-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-2-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-2-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-2-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-2-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-2-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-2-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, 
+                  (max-width: 768px) 450px, 
+                  496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P3</h2>
+          <!-- <img src="assets/img/RGTS-QS-WP-3-1080-2640.webp" class="zoom-image" alt="P3" /> -->
+          <img 
+            src="assets/img/RGTS-QS-WP-3-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-3-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-3-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-3-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-3-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-3-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-3-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-3-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P4</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-4-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-4-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-4-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-4-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-4-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-4-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-4-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-4-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P5</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-5-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-5-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-5-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-5-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-5-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-5-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-5-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-5-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P6</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-6-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-6-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-6-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-6-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-6-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-6-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-6-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-6-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P7</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-7-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-7-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-7-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-7-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-7-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-7-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-7-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-7-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P8</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-8-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-8-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-8-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-8-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-8-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-8-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-8-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-8-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P9</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-9-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-9-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-9-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-9-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-9-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-9-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-9-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-9-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P10</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-10-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-10-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-10-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-10-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-10-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-10-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-10-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-10-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            fetchpriority="high" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P11</h2>
+            <img src="assets/img/RGTS-QS-WP-11-1080-2640.webp" class="zoom-image" alt="P1" fetchpriority="high" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      <div style="display:flex; justify-content: center;">
+        <ion-card style="width: 100%; max-width: 800px; margin: 10px;">
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title *ngIf="currentLang === 'zh'">
+              <!&& 
+                如何搵出暗飛馬 
+                運用賠率篩選馬匹
+              &&>
+              介面簡介    
+            </ion-card-title>
+
+            <ion-card-title *ngIf="currentLang === 'en'" style="font-size: 22px;">
+              <!&& How to spot long-shot horses &&>
+              UI introduction   
+            </ion-card-title>
+            <!&& <ion-card-subtitle>Card Subtitle</ion-card-subtitle> &&>
+          </ion-card-header>
+        
+          <ion-card-content *ngIf="currentLang === 'zh'">
+            <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+              <li style="margin-bottom: 10px;">
+                喺主頁面，撳「走地易/即時玩」掣 (P1)。
+              </li>
+              <li style="margin-bottom: 10px;">
+                去到賽事選擇頁面 (P2)，你可以選擇排位表、賠率或派彩頁面。
+              </li>
+              <li style="margin-bottom: 10px;">
+                「排位表」頁面 (P3) 包含每隻馬嘅往績、評語同貼士數據。
+              </li>
+              <li style="margin-bottom: 10px;">
+                「賠率」頁面 (P4) 包含本港同海外賽事（最佳賠率）嘅詳細即時賠率同貼士數據。賠率種類包括：獨贏 (Win)、位置 (Place)、連贏 (Qin)、位置Q (Qpl)、預測/前三名 (Forecast)，以及騎師同練馬師嘅即時表現數據。
+              </li>
+              <li>
+                貼士數據 (P5)、「派彩及賽果」頁面 (P6) 包含每場賽事嘅派彩 (P7)、賽果 (P8) 同賽事重溫影片 (P9, P10, P11)。
+              </li>
+            </ul>
+          </ion-card-content>
+
+          <ion-card-content *ngIf="currentLang === 'en'">
+            <!&& Changed to <ul> with a standard bullet style &&>
+            <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+              <li style="margin-bottom: 10px;">
+                From the Home Page, press the "Live Play" button (P1). 
+              </li>
+              <li style="margin-bottom: 10px;">
+                From the Race Selection Page (P2), you can select the Racecard, Odds, or Dividend pages.
+              </li>
+              <li style="margin-bottom: 10px;">
+                The Racecard page (P3) includes each horse's form, comments, and tips data.
+              </li>
+              <li style="margin-bottom: 10px;">
+                The Odds Page (P4) includes detailed live odds and tips data for both Hong Kong and Overseas races (best odds). Odds types include: Win, Place, Quinella (Qin), Quinella Place (Qpl), Forecast, as well as Jockey and Trainer live performance data.
+              </li>
+              <li>
+                The Tips data (P5), Dividend and Result page (P6) includes each race's dividend (P7), result (P8), and replay videos (P9, P10, P11).
+              </li>
+            </ul>
+          </ion-card-content>
+
+        </ion-card>
+      </div>
+    -->
+
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <!-- 06102026 Tooke out max-width: 800px; -->
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            UI Introduction
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>Access Live Play:</strong> From the Home Page, press the "Live Play" button (P1). 
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Select Your View:</strong> From the Race Selection Page (P2), you can select the Racecard, Odds, or Dividend pages.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Review the Racecard:</strong> The Racecard page (P3) includes each horse's form, comments, and tips data.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Analyze Live Odds:</strong> The Odds Page (P4) includes detailed live odds and tips data for both Hong Kong and Overseas races (best odds). Odds types include: Win, Place, Quinella (Qin), Quinella Place (Qpl), Forecast, as well as Jockey and Trainer live performance data.
+            </li>
+            <li>
+              <strong>Check Results & Videos:</strong> The Tips data (P5), Dividend and Result page (P6) includes each race's dividend (P7), result (P8), and replay videos (P9, P10, P11).
+            </li>
+          </ul>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh'">
+      <!-- 06102026 Tooke out max-width: 800px; -->
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            介面簡介
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>開啟即時功能：</strong>喺主頁面，撳「走地易/即時玩」掣 (P1)。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>切換賽事數據：</strong>去到賽事選擇頁面 (P2)，你可以選擇排位表、賠率或派彩頁面。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>查看排位詳情：</strong>「排位表」頁面 (P3) 包含每隻馬嘅往績、評語同貼士數據。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>分析即時賠率：</strong>「賠率」頁面 (P4) 包含本港同海外賽事（最佳賠率）嘅詳細即時賠率同貼士數據。賠率種類包括：獨贏 (Win)、位置 (Place)、連贏 (Qin)、位置Q (Qpl)、預測/前三名 (Forecast)，以及騎師同練馬師嘅即時表現數據。
+            </li>
+            <li>
+              <strong>重溫賽果影片：</strong>貼士數據 (P5)、「派彩及賽果」頁面 (P6) 包含每場賽事嘅派彩 (P7)、賽果 (P8) 同賽事重溫影片 (P9, P10, P11)。
+            </li>
+          </ul>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+
+    <!-- START: Section 2 Using Odds Data for Horse Screening and Race Analysis -->
+    <h1 style="text-align: center; color: whitesmoke; 
+      font-size: 33px; margin-bottom: 0px;">
+      <span *ngIf="currentLang === 'zh'">海外賽事 <br> 
+        <span style="font-size: 20px; font-style: italic; color: aqua;">
+          運用賠率數據篩選馬匹和評估賽事形勢
+        </span>
+      </span>
+
+      <span *ngIf="currentLang === 'en'">World Pool Races <br> 
+        <span style="font-size: 22px; display: inline-block; line-height: 1; font-style: italic;
+          color: aqua;">
+          Using Odds Data for Horse Screening and Race Analysis
+        </span>
+      </span>
+    </h1>
+
+    <!-- Use odds to select horses section -->
+    <!-- BKUP: 06122026
+      <div class="scrollable-row-container">
+        <div class="custom-row">
+          <div class="custom-col">
+            <h2 style="color: black">P12</h2>
+            <!&& <img src="assets/img/RGTS-QS-WP-1-1080-2640.webp" class="zoom-image" alt="P1" /> &&>
+
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-12-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-SH-12-203-496.webp 203w,
+                assets/img/RGTS-QS-WP-SH-12-303-739.webp 303w,
+                assets/img/RGTS-QS-WP-SH-12-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-SH-12-406-992.webp 406w,
+                assets/img/RGTS-QS-WP-SH-12-450-1098.webp 450w,
+                assets/img/RGTS-QS-WP-SH-12-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-SH-12-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, 
+                    (max-width: 768px) 450px, 
+                    496px"
+              alt="World Pool Quick Start"
+              class="responsive-img-no-max-height"
+            />
+
+          </div>
+
+          <div class="custom-col">
+            <h2 style="color: black">P13</h2>
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-13-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-SH-13-203-496.webp 203w,
+                assets/img/RGTS-QS-WP-SH-13-303-739.webp 303w,
+                assets/img/RGTS-QS-WP-SH-13-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-SH-13-406-992.webp 406w,
+                assets/img/RGTS-QS-WP-SH-13-450-1098.webp 450w,
+                assets/img/RGTS-QS-WP-SH-13-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-SH-13-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, 
+                    (max-width: 768px) 450px, 
+                    496px"
+              alt="World Pool Quick Start"
+              class="responsive-img-no-max-height"
+            />
+          </div>
+
+          <div class="custom-col">
+            <h2 style="color: black">P14</h2>
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-14-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-SH-14-203-496.webp 203w,
+                assets/img/RGTS-QS-WP-SH-14-303-739.webp 303w,
+                assets/img/RGTS-QS-WP-SH-14-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-SH-14-406-992.webp 406w,
+                assets/img/RGTS-QS-WP-SH-14-450-1098.webp 450w,
+                assets/img/RGTS-QS-WP-SH-14-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-SH-14-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, 
+                    (max-width: 768px) 450px, 
+                    496px"
+              alt="World Pool Quick Start"
+              class="responsive-img-no-max-height"
+            />
+          </div>
+
+          <div class="custom-col">
+            <h2 style="color: black">P15</h2>
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-15-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-SH-15-203-496.webp 203w,
+                assets/img/RGTS-QS-WP-SH-15-303-739.webp 303w,
+                assets/img/RGTS-QS-WP-SH-15-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-SH-15-406-992.webp 406w,
+                assets/img/RGTS-QS-WP-SH-15-450-1098.webp 450w,
+                assets/img/RGTS-QS-WP-SH-15-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-SH-15-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, 
+                    (max-width: 768px) 450px, 
+                    496px"
+              alt="World Pool Quick Start"
+              class="responsive-img-no-max-height"
+            />
+          </div>
+
+          <!&& 
+            <div class="custom-col">
+              <h2 style="color: black">P16</h2> <!&& Updated index pointer to match the text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text" &&>
+              <img 
+                src="assets/img/RGTS-QS-WP-SH-16-1752-2800.webp"
+                srcset="
+                  assets/img/RGTS-QS-WP-SH-16-203-254.webp 203w,
+                  assets/img/RGTS-QS-WP-SH-16-303-379.webp 303w,
+                  assets/img/RGTS-QS-WP-SH-16-360-450.webp 360w,
+                  assets/img/RGTS-QS-WP-SH-16-406-508.webp 406w,
+                  assets/img/RGTS-QS-WP-SH-16-450-563.webp 450w,
+                  assets/img/RGTS-QS-WP-SH-16-496-621.webp 496w,
+                  assets/img/RGTS-QS-WP-SH-16-1752-2800.webp 1752w
+                "
+                sizes="(max-width: 480px) 360px, 
+                      (max-width: 768px) 450px, 
+                      496px"
+                alt="World Pool Quick Start"
+                class="responsive-img-no-max-height"
+              />
+            </div>
+          &&>
+
+          <!&& /* FIX: Force desktop views to allow up to 75% of the monitor width */ &&>
+
+          <!&& ========================================== &&>
+          <!&& 1. MOBILE VIEW (Swipable, Height-Capped)   &&>
+          <!&& ========================================== &&>
+          <div class="custom-col" *ngIf="running_on_mobile_boolean">
+            <h2 style="color: black; text-align: center;">P16</h2>
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-16-1752-2800.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-SH-16-203-324.webp 203w,
+                assets/img/RGTS-QS-WP-SH-16-303-484.webp 303w,
+                assets/img/RGTS-QS-WP-SH-16-360-575.webp 360w,
+                assets/img/RGTS-QS-WP-SH-16-406-649.webp 406w,
+                assets/img/RGTS-QS-WP-SH-16-450-719.webp 450w,
+                assets/img/RGTS-QS-WP-SH-16-496-793.webp 496w,
+                assets/img/RGTS-QS-WP-SH-16-1752-2800.webp 1752w
+              "
+              sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+              alt="World Pool Quick Start - Mobile"
+              class="responsive-img-no-max-height" 
+              style="width: 100%; height: auto; max-height: 75vh; object-fit: contain;"
+            />
+          </div>
+
+          <!&& ========================================== &&>
+          <!&& 2. DESKTOP VIEW (High-Res, Expanded Width) &&>
+          <!&& ========================================== &&>
+          <div class="custom-col" *ngIf="!running_on_mobile_boolean" 
+            style="width: 100%; max-width: 1000px; margin: 20px auto;">
+            <h2 style="color: black; text-align: center;">P16</h2>
+            <!&& Uses your newly enlarged Paint image to ensure absolute clarity on monitors &&>
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-16-3504-5600.webp" 
+              alt="World Pool Quick Start - Desktop"
+              style="width: 100%; height: auto; max-height: none !important; object-fit: contain; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+            />
+          </div>
+        </div>
+      </div>
+    -->
+
+
+    <div class="scrollable-row-container">
+      <div class="custom-row">
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P12</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-12-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-12-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-12-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-12-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-12-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-12-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-12-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-12-1080-2640.webp 1080w
+            " 
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px" 
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P13</h2>
+          <!-- <img src="assets/img/RGTS-QS-WP-2-1080-2640.webp" class="zoom-image" alt="P2" /> -->
+
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-13-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-13-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-13-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-13-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-13-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-13-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-13-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-13-1080-2640.webp 1080w
+            " 
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px" 
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+
+        </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center; ">P14</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-14-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-14-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-14-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-14-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-14-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-14-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-14-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-14-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px" 
+            alt="World Pool Quick Start"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+          <!-- COLUMN 1 (P15) -->
+          <div class="custom-col">
+            <h2 style="color: black; text-align: center;">P15</h2>
+            <img 
+              src="assets/img/RGTS-QS-WP-SH-15-1080-2640.webp"
+              srcset="
+                assets/img/RGTS-QS-WP-SH-15-203-496.webp 203w,
+                assets/img/RGTS-QS-WP-SH-15-303-739.webp 303w,
+                assets/img/RGTS-QS-WP-SH-15-360-878.webp 360w,
+                assets/img/RGTS-QS-WP-SH-15-406-992.webp 406w,
+                assets/img/RGTS-QS-WP-SH-15-450-1098.webp 450w,
+                assets/img/RGTS-QS-WP-SH-15-496-1210.webp 496w,
+                assets/img/RGTS-QS-WP-SH-15-1080-2640.webp 1080w
+              "
+              sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+              alt="World Pool Quick Start"
+              class="responsive-img-no-max-height" 
+              loading="lazy" 
+            />
+          </div>
+
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P16</h2>
+            <img src="assets/img/AAA.webp" class="responsive-img-no-max-height" 
+              alt="World Pool Quick Start P16" loading="lazy" />
+        </div>
+
+        <!-- COLUMN 1 (P17) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P17</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-17-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-17-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-17-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-17-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-17-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-17-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-17-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-17-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P17"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P18) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P18</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-18-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-18-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-18-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-18-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-18-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-18-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-18-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-18-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P18"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P19) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P19</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-19-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-19-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-19-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-19-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-19-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-19-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-19-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-19-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P19"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P20) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P20</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-20-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-20-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-20-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-20-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-20-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-20-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-20-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-20-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P20"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P21) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P21</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-21-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-21-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-21-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-21-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-21-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-21-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-21-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-21-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P21"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P22) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P22</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-22-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-22-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-22-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-22-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-22-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-22-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-22-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-22-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P22"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P23) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P23</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-23-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-23-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-23-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-23-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-23-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-23-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-23-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-23-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P23"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- BKUP: 06092026 Original version before updated by Genimi
+      <div style="display:flex; justify-content: center;">
+        <ion-card>
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title *ngIf="currentLang === 'zh'">
+              運用賠率數據篩選馬匹和評估賽事形勢    
+            </ion-card-title>
+
+            <ion-card-title *ngIf="currentLang === 'en'" style="font-size: 22px;">
+              <!&& How to spot long-shot horses &&>
+              Use odds data selecting horses and perform race analysis
+            </ion-card-title>
+            <!&& <ion-card-subtitle>Card Subtitle</ion-card-subtitle> &&>
+          </ion-card-header>
+        
+          <ion-card-content *ngIf="currentLang === 'zh'">
+            <!&& Here's a small text description for the card content. Nothing more, nothing less. &&>
+            <ol class="quickStarted" style="padding-inline-start: 18px;">
+              <li>
+                由主頁按走地掣(圖片1)
+              </li>
+              <li>
+                於賽事選擇頁中按免費試用掣(圖片2)。注意：如免費試用掣為灰色，代表這賽馬日的免費試用名額已滿，而免費試用將於每個賽馬日前之排位日開始按受登記，額滿即止。用戶可於首頁按日票通掣購買數據服務。
+              </li>
+              <li>
+                於套餐選擇頁中按全餐及確認掣(圖片3)。
+              </li>
+              <li>
+                於登入/註冊頁中輸入已註冊的電郵地址及密碼後按確認掣，還未註冊用戶請按註冊掣(圖片4)。
+              </li>
+              <li>
+                成功登入後按進入交易區掣(圖片5)。
+              </li>
+              <li>
+                於交易頁中按藍色掣(圖片6)。
+              </li>
+              <li>
+                登記免費試用步驟已完成，按進入主頁掣(圖片7)。
+              </li>
+            </ol>
+          </ion-card-content>
+
+          <ion-card-content *ngIf="currentLang === 'en'">
+            <!&& Changed to <ul> with a standard bullet style &&>
+            <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+              <li style="margin-bottom: 10px;">
+                Goes to the odds page. From the Race Selection Page (P12) press the "Odds" button. We will be using the race 5 Group 1 of the Epson United Kingdom on 06/06/2026 as the sample data.
+              </li>
+              <li style="margin-bottom: 10px;">
+                From the Odds page, press the "Win Trend" button (P13) which will only show the win type odds. Then press the top "Select Odds" button two times (P14), the first time UI will show only the Hong Kong World Pool data and we want to first focus on the overseas win odds data. 
+              </li>
+              <li style="margin-bottom: 10px;">
+                Then scroll right, look for the column "Overseas (Pa.Ring)" and the "Overseas (Overnight)" (P14). The overseas odds shows on this UI is best odds among about 15 different brokers, ie the best return of your investment or bets.
+              </li>
+              <li style="margin-bottom: 10px;">
+                RGTS will automatically record down odds data from these time slots (P15): Current, Last 1 minute (before gate started), Last 3 minute, horses are existing the parade ring (Pa.Ring) about 5 to 6 minute before gate started and the last time slot was the overnight data. And for the current live odds data, RGTS will refresh and auto update by itself every 60 seconds during the last 10 minute before the gate started. 
+              </li>
+              <li>
+                Compare both the Overseas (Pa.Ring) and Overseas (Overnight) data columns and select which horses' Pa.Ring win odds is lower than the Overnight win odds and for this race there are four horses in this criteria: 5, 8, 13, 14 (P16). These are the horses that you need to pay attention to. 
+              </li>
+              <li>
+                Now press the "Select Odds" button one time and there will be a column name "OverNight" in between the "Overseas (Pa.Ring)" and Overseas (Overnight) columns. And this is the Hong Kong World Pool Overnight win odds data and then check out which horse was the favourite horse in Hong Kong. For this race, horse number 7 was the favourite horse for the Overnight win odds. Now also compare the odds for the Overseas (Pa.Ring) 3.7 and Overseas (Overnight) 3.2 and for this race this favourite horse's Pa.Ring odds was higher than the Overnight odds (P17). What this normally indicated was that this favourite horse didn't have strong money flows into it, ie this is the indicator that this Group 1 race might be good for going after some long shot horses.
+              </li>
+              <li>
+                You can at any time use the same technique to compare "Overseas (Overnight)" odds with the "Overseas (Current)" odds (P18). We suggested that Pa.Ring time slot was the best time slot to review the odds data as it's just 5 to 6 minutes before the gate started. From this time on, we will be more focusing on the Hong Kong live odds data, press the "Select Odds" and display just the Hong Kong odds and keep monitoring the last 3 and 1 minutes odds fluctuations. For this race, we got these horse numbers on hand:  5, 8, 13, 14 and it's very obvious that horse number 8 had very strong money flowed into this horse, as both the last 3 and 1 minutes odds had both hightlighed with Green color, ie both these time slots the odds was dropped by 20% or more. (P19)
+              </li>
+              <li>
+                Besides horse number 8, let's review those other three horses numbers: 5, 13 and 14. All these horses odds were heavily long shots as their odds at the Pa.Ring time slot are 81, 91 and 81. And we believed the reason why these heavy long shots horses had money poured into it was because some insiders must be figured out the favourite horse number 7 wasn't that solid and we believed it's mostly due to the weather as the track condition had changed to Yielding To Soft and they picked some other horses that can handle the soft track or so. We suggest in case you like the favourite horse number 7 alot and your betting type is among QIN, QPL, Forcast or combinations. Then you still can pick this favourite but only limited to leg only not the banker horse. ie If your betting type is QIN using 1 banker with 3 legs, this favourite horse number 7 should be inside your 3 legs selections, better not pick it for the banker.
+              </li>
+              <li>
+                Please be informed that not each races can apply the same technique. But the more you used and practised this technique, by using our "Past Race Day Reviews Page" (P20), the better. And in fact you should now went into this sample race and follow along (P21). 
+              </li>
+            </ul>
+          </ion-card-content>
+        </ion-card>
+      </div> 
+    
+    -->
+
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <!-- 06102026 Tooke out max-width: 800px; -->
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            Using Odds Data for Horse Screening and Race Analysis
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>Navigate to the Odds Page:</strong> From the Race Selection Page (P12), press the "Odds" button. We will use Race 5 (Group 1) of the Epsom United Kingdom meeting on 06/06/2026 as our sample data.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Filter Win Odds:</strong> On the Odds page, press the "Win Trend" button (P13) to display only Win odds. Next, press the top "Select Odds" button twice (P14). The interface will initially show both Hong Kong World Pool and overseas data, but we want to focus on overseas win odds data first.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Identify Overseas Odds Columns:</strong> Scroll to the right and locate the "Overseas (Pa.Ring)" and "Overseas (Overnight)" columns (P15). The overseas odds shown here represent the best available odds (highest payout) consolidated from approximately 15 different bookmakers' data.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Understand the Time Slots:</strong> RGTS automatically records odds data across multiple key intervals (P16): Overnight, Parade Ring (Pa.Ring, roughly 5 to 6 minutes before the gates open), Last 3 Minutes, Last 1 Minute, and Current. Current live odds refresh automatically every 60 seconds during the final 10 minutes before the race starts.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Spot Market Support:</strong> Compare the "Overseas (Pa.Ring)" and "Overseas (Overnight)" columns. Look for horses whose Parade Ring odds are lower than their Overnight odds. In this sample race, five horses fit this criteria: 4, 5, 8, 13, and 14 (P17). These are the runners that warrant your attention.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Analyze the Local Favourite:</strong> Press the "Select Odds" button once more to reveal the "Overnight" column for the Hong Kong World Pool data, positioned between the two overseas columns. Check which horse is heavily backed in Hong Kong. For this race, horse number 7 was the Overnight favourite. However, comparing its Overseas Pa.Ring odds (3.7) to its Overseas Overnight odds (3.2) shows the price actually drifted higher at the parade ring (P18). This lack of strong late money suggests the favourite might be vulnerable, making this Group 1 race a prime opportunity to hunt for long-shots.
+            </li>
+
+            <li style="margin-bottom: 12px;">
+              <strong>Evaluate Extreme Long-Shots:</strong> Reviewing the remaining short-listed runners (4, 5, 13, and 14), we see they are extreme long-shots with Parade Ring odds of 126-to-1, 81-to-1, 91-to-1, and 81-to-1 respectively. Insiders likely poured money into these massive prices because they recognized the favourite (7) was vulnerable—potentially due to the track condition changing to "Yielding to Soft." If you still strongly fancy the favourite (7) for exotic bets like Quinella (QIN), Quinella Place (QPL), or Forecast combinations, we advise treating it strictly as a "leg" rather than a "banker." For example, in a 1-Banker-3-Legs Quinella, place horse 7 among your legs, not as the single banker.
+            </li>
+
+            <!-- <li style="margin-bottom: 12px;">
+              <strong>Track Live Fluctuations:</strong> You can apply this same comparison technique between "Overseas (Overnight)" and "Overseas (Current)" odds at any time (P18). We highly recommend using the Parade Ring time slot as your primary baseline, as it reflects smart money right before the race. From that point onward, switch your focus to the Hong Kong live odds by pressing "Select Odds" to monitor the 3-minute and 1-minute fluctuations. Looking at our shortlist (5, 8, 13, 14), it becomes obvious that horse number 8 attracted massive smart money, as both its 3-minute and 1-minute odds columns are highlighted in Green, indicating a price drop of 20% or more (P19).
+            </li> -->
+            <!-- ... code for bullets 1 to 6 remains exactly the same ... -->
+
+            <!-- STEP 7: THIS IS WHERE YOU PASTE THE NEW UPDATED CODE BLOCK -->
+            <li style="margin-bottom: 12px;">
+              <strong>Track Live Fluctuations & Results:</strong> You can apply this same comparison technique between "Overseas (Overnight)" and "Overseas (Current)" odds at any time (P19). We highly recommend using the Parade Ring time slot as your primary baseline. From that point onward, monitor the 3-minute and 1-minute fluctuations. Looking at our shortlist (5, 8, 13, 14), it becomes obvious that horse number 8 attracted massive smart money, as both its 3-minute and 1-minute odds columns are highlighted in Green, indicating a price drop of 20% or more (P20). In fact, horse number 8 went on to win the race, paying out an official dividend of $65 HKD (P21)—a massive drop from its 20-to-1 Hong Kong overnight and 15-to-1 overseas overnight odds due to that heavy late betting volume.
+            </li>
+
+            <!-- ... code for bullets 8 and 9 remains exactly the same ... -->
+
+            <!-- <li>
+              <strong>Practice Makes Perfect:</strong> Please note that this strategy cannot be applied blindly to every single race. The more you practice this filtering technique using our "Past Race Day Reviews Page" (P21), the sharper your analysis will become. We suggest opening this sample race right now to follow along step-by-step (P22).
+            </li> -->
+
+            <li style="margin-bottom: 12px;">
+              <strong>Practice Makes Perfect:</strong> Please note that this strategy cannot be applied blindly to every single race. The more you practice this filtering technique using our "Past Race Day Reviews Page" (P22), the sharper your analysis will become. We suggest opening this sample race right now to follow along step-by-step (P23). 
+              <span *ngIf= "running_on_mobile_boolean" 
+                style="display: block; margin-top: 8px; color: #1b5e20;">
+                💡 <strong>Pro Tip:</strong> Tap the <strong>"Share This Guide"</strong> button below to send this URL to your desktop computer. Reading the guide on a larger screen while playing with the data inside your mobile app makes practicing much easier!
+              </span>
+            </li>
+
+          </ul>
+
+          <!-- Add below </ul> inside currentLang === 'en' -->
+          <!-- <div style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <button (click)="shareGuide()" 
+                    style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; background-color: #0288d1; color: white; font-weight: bold; border: none; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.15); cursor: pointer;">
+              <span>📤 Share This Guide to Desktop</span>
+            </button>
+          </div> -->
+
+          <!-- This Ionic component will render flawlessly inside the In-App Browser -->
+          <div *ngIf= "running_on_mobile_boolean" 
+            style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <ion-button (click)="shareGuide()" 
+                        shape="round" 
+                        style="--background: #0288d1; --color: white; font-weight: bold; --box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+              <ion-icon slot="start" name="share-social-outline"></ion-icon>
+              
+              <!-- <span *ngIf="currentLang === 'en'">Share This Guide to Desktop</span>
+              <span *ngIf="currentLang === 'zh'">分享此教學至電腦觀看</span> -->
+
+              @if (currentLang === 'en') {
+                <span>Share This Guide to Desktop</span>
+              } @else if (currentLang === 'zh') {
+                <span>分享此教學至電腦觀看</span>
+              }
+
+            </ion-button>
+          </div>          
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh'">
+      <!-- 06102026 Tooke out max-width: 800px; -->
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            運用賠率數據篩選馬匹和評估賽事形勢
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>前往賠率頁面：</strong>喺「賽事選擇」頁面 (P12)，撳「賠率」掣。我哋會用 2026 年 6 月 6 日英國葉森打吡賽日嘅第 5 場一級賽作為示範數據。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>篩選獨贏賠率：</strong>入到賠率頁面後，撳「獨贏走勢」掣 (P13) 嚟只顯示獨贏賠率。然後撳兩次頂部嘅「選擇賠率」掣 (P14)。介面起初會同時顯示香港和海外賠率數據，但我哋想先將焦點擺喺海外嘅獨贏賠率數據上。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>尋找海外賠率欄目：</strong>向右拉，搵返「海外離沙圈」同「海外隔夜」呢兩個欄目 (P15)。介面顯示嘅海外賠率係匯集咗大約 15 間唔同外博公司嘅「最佳賠率（最高回報）」數據。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>了解數據時段：</strong>RGTS 會全自動記錄以下關鍵時段嘅賠率 (P16)：「隔夜」、「亮相圈/離沙圈（即起步前約 5 至 6 分鐘）」、「最後 3 分鐘」、「最後 1 分鐘」同「即時」。至於即時賠率，RGTS 喺開閘前最後 10 分鐘內，每 60 秒就會全自動更新一次。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>搵出初步落飛馬：</strong>對比「海外離沙圈」同「海外隔夜」兩欄，篩選出邊隻馬嘅臨場離沙圈賠率比隔夜賠率低。以呢場賽事為例，有5隻馬符合呢個條件：4號、5號、8號、13號、14號 (P17)。呢幾隻馬就係你需要高度留意嘅目標。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>分析本地大熱門：</strong>依家再撳一次「選擇賠率」掣，喺上述兩個海外欄目中間，會多出一個名為「隔夜」嘅欄目，呢個係香港嘅隔夜獨贏賠率。我哋可以睇吓邊隻係香港嘅大熱門。呢場隔夜大熱門係 7 號馬，但對比佢嘅海外離沙圈賠率 (3.7) 同海外隔夜賠率 (3.2)，會發現佢喺離沙圈時賠率反而變冷 (P18)。呢個現象通常代表隻大熱門臨場無強烈嘅資金支持。換句話講，呢場一級賽好有機會爆冷，非常適合向冷門馬埋手。
+            </li>
+
+            <li style="margin-bottom: 12px;">
+              <strong>評估超巨型冷門：</strong>再睇埋其餘4隻篩選出嚟嘅冷馬：4號, 5號、13號同14號。呢幾隻馬喺離沙圈時嘅賠率分別係 126倍、81倍、91倍同 81倍，屬於超級大冷門。有精明資金衝住呢幾隻大冷門而嚟，相信係因為有幕後知情人士睇穿咗大熱門 7 號並不穩陣——好大程度係因為當時跑道轉為「黏地至軟地」，而呢幾隻冷馬正好具備特佳嘅軟地性能。如果你依然好鍾意隻 7 號大熱門，如你打算投注連贏、位置Q、二重彩或其他組合，建議只宜將 7 號當作「腳」，千萬唔好用嚟做「單膽」。例如你要買一膽三腳嘅連贏，7 號應該擺喺三隻腳入面，而唔係做膽個隻。
+            </li>
+
+            <!-- <li style="margin-bottom: 12px;">
+              <strong>監察即時飛數變動：</strong>你隨時都可以用同樣嘅方法去對比「海外隔夜」同「海外即時」賠率 (P18)。我哋建議以「亮相圈 (Pa.Ring)」時段作為最佳嘅分析據點，因為呢個時候最能反映開閘前嘅聰明錢。由呢個時間點開始，大家可以將焦點移返去香港嘅即時賠率——撳「Select Odds」切換至只顯示香港賠率，密切監察最後 3 分鐘同 1 分鐘嘅飛數波動。睇返我哋手頭上嘅心水馬（5、8、13、14號），好明顯見到 8 號馬有極強烈嘅資金湧入，因為佢嘅最後 3 分鐘同 1 分鐘賠率都著咗「綠燈」，代表兩個時段嘅賠率都急跌咗 20% 或以上 (P19)。
+            </li> -->
+
+            <li style="margin-bottom: 12px;">
+              <strong>監察即時飛數變動及賽果：</strong>你隨時都可以用同樣嘅方法，去對比「海外隔夜」同「海外即時」賠率 (P19)。我哋強烈建議以「離沙圈」時段作為你嘅核心分析據點。由呢個時間點開始，密切監察最後 3 分鐘同 1 分鐘嘅飛數波動。睇返我哋手頭上嘅心水名單（4、5、8、13、14號），好明顯見到 8 號馬有極其強烈嘅精明資金湧入，因為佢嘅最後 3 分鐘同 1 分鐘賠率欄目都著咗「綠燈」，代表呢兩個時段嘅賠率都急跌咗 20% 或以上 (P20)。最終，呢隻 8 號馬不負眾望順利獨贏過終點，官方獨贏派彩為 $65 港元 (P21)！對比返佢原本喺香港隔夜有 20倍、海外隔夜有 15倍嘅落飛情況，正好印證咗臨場巨大投注量所帶來嘅威力。
+            </li>
+
+            <!-- <li>
+              <strong>多用多練累積經驗：</strong>請記住，呢個篩選技巧並非套套皆準，絕不能盲目跟從。你越用得頻密、練得越多，預測就會越準。你可以善用我哋嘅「賽事重温」功能(P21) 嚟反覆練習。依家就建議你直接入去呢場示範賽事頁面，邊睇截圖邊對照一齊操作(P22)。
+            </li> -->
+
+            <li>
+              <strong>多用多練累積經驗：</strong>請記住，呢個篩選技巧並非套套皆準，絕不能盲目跟從。你越用得頻密、練得越多，預測就會越準。你可以善用我哋嘅「賽事重溫」 (P22) 嚟反覆練習。依家就建議你直接入去呢場示範賽事頁面，邊睇截圖邊對照一齊操作 (P23)。
+              <span *ngIf= "running_on_mobile_boolean" 
+                style="display: block; margin-top: 8px; color: #1b5e20;">
+                💡 <strong>實戰小貼士：</strong>你可以撳下面個 <strong>「分享此教學」</strong> 掣，將個網址傳去你嘅電腦度開。用電腦大螢幕睇住教學，同時用手機開住個 App 嚟對照實操，練習效果會最好！
+              </span>
+            </li>
+
+          </ul>
+
+          <!-- Add below </ul> inside currentLang === 'zh-HK' -->
+          <!-- <div style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <button (click)="shareGuide()" 
+                    style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; background-color: #0288d1; color: white; font-weight: bold; border: none; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.15); cursor: pointer;">
+              <span>📤 分享此教學至電腦觀看</span>
+            </button>
+          </div> -->
+
+          <!-- This Ionic component will render flawlessly inside the In-App Browser -->
+          <div *ngIf= "running_on_mobile_boolean" 
+            style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <ion-button (click)="shareGuide()" 
+                        shape="round" 
+                        style="--background: #0288d1; --color: white; font-weight: bold; --box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+              <ion-icon slot="start" name="share-social-outline"></ion-icon>
+              
+              <!-- <span *ngIf="currentLang === 'en'">Share This Guide to Desktop</span>
+              <span *ngIf="currentLang === 'zh'">分享此教學至電腦觀看</span> -->
+
+              <!-- @if (currentLang === 'en') {
+                <span>Share This Guide to Desktop</span>
+              } @else if (currentLang === 'zh') {
+                <span>分享此教學至電腦觀看</span>
+              } -->
+
+              @if ($any(currentLang) === 'en') {
+                <span>Share This Guide to Desktop</span>
+              } @else if ($any(currentLang) === 'zh') {
+                <span>分享此教學至電腦觀看</span>
+              }
+
+
+
+            </ion-button>
+          </div>
+
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- END: Section 2 Using Odds Data for Horse Screening and Race Analysis -->
+
+    <!-- START: Section 3 Using Odds Data for Horse Screening and Race Analysis -->
+
+    <h1 style="text-align: center;color: whitesmoke; 
+      font-size: 33px; margin-bottom: 0px;">
+      <span *ngIf="currentLang === 'zh'">海外賽事 <br> 
+        <span style="font-size: 20px; font-style: italic; color: aqua;">
+          運用即埸貼士數據尋找高水馬
+        </span>
+      </span>
+
+      <span *ngIf="currentLang === 'en'">World Pool Races <br> 
+        <span style="font-size: 22px; display: inline-block; line-height: 1; font-style: italic;
+          color: aqua;">
+          Identify live hidden streamers using tips data
+        </span>
+      </span>
+    </h1>
+
+
+    <!-- INSIDE 運用即埸貼士數據尋找高水馬 -->
+    <!-- START: For images div -->
+    <div class="scrollable-row-container">
+      <div class="custom-row">
+        <!-- COLUMN 1 (P24) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P24</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-24-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-24-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-24-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-24-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-24-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-24-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-24-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-24-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P24"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P25) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P25</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-25-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-25-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-25-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-25-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-25-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-25-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-25-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-25-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P25"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P26) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P26</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-26-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-26-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-26-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-26-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-26-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-26-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-26-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-26-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P26"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P27) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P27</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-22-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-22-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-22-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-22-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-22-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-22-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-22-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-22-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P22"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P28) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P28</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-23-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-23-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-23-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-23-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-23-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-23-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-23-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-23-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P28"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+      </div>
+      <!-- END: <div class="custom-row"> -->
+    </div>
+    <!-- END: For images div -->
+    <!-- END: <div class="scrollable-row-container"> -->
+    <!-- INSIDE 運用即埸貼士數據尋找高水馬 -->
+
+    <!-- START: Text section -->
+    <!-- 
+        <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+          <ion-card style="width: 100%; max-width: 800px; margin: 10px;">
+            <ion-card-header style="padding-bottom: 0;">
+              <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+                Identify live hidden streamers using tips data
+              </ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+                <li style="margin-bottom: 12px;">
+                  <strong>Filtered horses:</strong> Let's use the same technique from the previous section "Using Odds Data for Horse Screening and Race Analysis", we will use Race 7 of the Epsom United Kingdom meeting on 06/06/2026 as our sample data, the filtered horses were 5, 9, 10, 11, 13, 15 and 16 using odds comparison between "Overseas (Pa.Ring)" and "Overseas (Overnight)" data columns (P23). And for this section, we will further examine these horses with the tips data.
+                </li>
+                <li style="margin-bottom: 12px;">
+                  <strong>Tips data overview:</strong> From the Odds page, press the "Win place" button and press the blue "Tips of race day" button at the top (P24). This tips data was provided directly by hkjc; it consisted of three tips selectors and each of them will pick three horses, the combined selected horses from this tips data were: 2, 4, 7, 9, 10 and 12. We consider this tips data as the forms analysis report that most likely these selected horses were in good form that most bettors warrant their attention.
+                </li>
+                <li style="margin-bottom: 12px;">
+                  <strong>Identify hidden streamers:</strong> Now we got our own filtered horses: 5, 9, 10, 11, 13, 15 and 16 and the tips data selected horses were: 2, 4, 7, 9, 10 and 12. Filted out those horses not on the tips data: 5, 11, 13, 15 and 16. These are the hidden streamer horses that warrant your attention. 
+                </li>
+                <li style="margin-bottom: 12px;">
+                  <strong>Track Live Fluctuations & Results:</strong> This step was exactly the same as the previous section that we will continue monitoring the odds fluctuations for the last 3 and 1 minute. For this race, there wasn't any major odds movements so you will have to use your own judgement to select horse(s) from these filtered horses (5, 11, 13, 15 and 16). Here was the result of this race (P24), horse number 13 was the winner with Win dividend paid $110 HKD and Place dividend paid $38.5 HKD, horse number 9 finished second with Place dividend paid $22.5 HKD and horse number 15 finished third with Place dividend $28 HKD. 
+                </li>
+              </ul>
+
+            </ion-card-content>
+          </ion-card>
+        </div> 
+    -->
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <!-- 06102026 Tooke out max-width: 800px; -->
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            Identify Live Hidden Streamers Using Tips Data
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>Initial Horse Screening:</strong> Using the exact same odds-comparison technique from the previous section, let's analyze Race 7 of the Epsom United Kingdom meeting on 06/06/2026. By comparing the "Overseas (Pa.Ring)" and "Overseas (Overnight)" columns, we successfully shortlist seven horses showing early market support: 5, 9, 10, 11, 13, 15, and 16 (P24). Next, we will use official tips data to cross-examine these runners.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Official Tips Overview:</strong> On the Odds page, press the "Win Place" button and tap the blue "Tips of Race Day" button at the top (P25). This data consists of selections from three official handicappers, each picking three horses. Combined, they selected horses: 2, 4, 7, 9, 10, and 12. These public selections represent the consensus form-horses that the general betting public is heavily focused on.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Expose the "Hidden Streamers":</strong> To find true hidden value, we look for the filtered market-supported horses that the official tipsters completely overlooked. By taking our shortlist (5, 9, 10, 11, 13, 15, 16) and filtering out the public consensus horses (9 and 10), we uncover five highly lucrative <strong>Hidden Streamer Horses: <span style="color: #d32f2f; background: #ffebee; padding: 2px 6px; border-radius: 4px;">5, 11, 13, 15, and 16</span></strong>. These are the sharp money targets that are flying completely under the public's radar.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Track Live Fluctuations & Results:</strong> Continue monitoring the 3-minute and 1-minute live odds leading up to the race. In this specific race, there were no major late odds spikes, meaning you rely on your final judgment to back your selected hidden streamers. The official race results (P26) reveal the massive profit power of this screening technique:
+              <span style="display: block; margin-top: 8px; padding-left: 10px; border-left: 3px solid #2e7d32;">
+                • <strong>1st Place:</strong> Horse <strong>13</strong> won smoothly, paying a massive Win dividend of <strong>$110 HKD</strong> and <strong>$38.5 HKD</strong> for Place!<br>
+                • <strong>2nd Place:</strong> Horse <strong>9</strong> (Public Tip)<br>
+                • <strong>3rd Place:</strong> Horse <strong>15</strong> finished third, paying a <strong>$28 HKD</strong> Place dividend!
+              </span>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>High-Probability Profit Analysis:</strong> For standard Win/Place (Each-Way) players, landing <strong>2 out of your 5 filtered hidden streamers</strong> in the top three yields an incredible mathematical edge. Furthermore, exotic players who combined these selections secured a fantastic return: the <strong>13 - 15 Quinella Place (QPL / Swinger) paid out a lucrative $132 HKD!</strong> By filtering out public bias, this system routinely uncovers high-yield combinations.
+            </li>
+            <li>
+              <strong>Practice Makes Perfect:</strong> Please note that this strategy cannot be applied blindly to every single race. The more you practice this filtering technique using our "Past Race Day Reviews Page" (P27), the sharper your analysis will become. We suggest opening this sample race right now to follow along step-by-step (P28).
+            </li>
+          </ul>
+          
+          <!-- Shared Mobile-Only Button Component -->
+          <div *ngIf="running_on_mobile_boolean" style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <ion-button (click)="shareGuide()" shape="round" style="--background: #0288d1; --color: white; font-weight: bold; --box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+              <ion-icon slot="start" name="share-social-outline"></ion-icon>
+              <span>Share This Guide to Desktop</span>
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh'">
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            運用貼士數據勾勒臨場隱蔽落飛馬（Streamers）
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>初步馬匹篩選：</strong>沿用上一章節嘅賠率對比技巧，我哋以 2026 年 6 月 6 日英國葉森賽日第 7 場作為示範。經對比「海外離沙圈」同「海外隔夜」欄目後，成功鎖定7隻有表面資金支持嘅心水馬：5、9、10、11、13、15、16 號 (P24)。下一步，我哋會引入官方貼士進行交叉比對。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>官方貼士概覽：</strong>喺賠率頁面，撳「獨贏位置」掣，再撳頂部藍色嘅「賽日貼士」掣 (P25)。呢啲貼士數據由馬會官方提供，由三位評馬人各選三隻馬，合共圈出：2、4、7、9、10、12 號。呢啲屬於公眾大路馬，代表普遍馬迷公認、形勢極佳嘅熱門。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>尋找隱蔽落飛馬：</strong>想尋找真正嘅高回報機會，就要搵出有臨場資金暗中支持、卻被官方貼士完全忽視嘅冷門。將我哋篩選嘅心水名單 (5, 9, 10, 11, 13, 15, 16) 剔除大路馬 (9 同 10 號) 後，即可精準鎖定五隻高回報<strong>「隱蔽落飛馬」：<span style="color: #d32f2f; background: #ffebee; padding: 2px 6px; border-radius: 4px;">5、11、13、15、16 號</span></strong>！呢幾隻先係完全避開公眾視線嘅聰明錢目標。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>監察即時飛數及賽果：</strong>喺臨場開閘前 3 分鐘及 1 分鐘繼續留意賠率波動。呢場賽事臨場無極端嘅落飛訊號，大家可跟據最終形勢，喺呢五隻隱蔽落飛馬中揀馬落注。最終賽果 (P26) 完美展現咗呢套篩選心法嘅驚人贏錢威力：
+              <span style="display: block; margin-top: 8px; padding-left: 10px; border-left: 3px solid #2e7d32;">
+                • <strong>第一名：</strong> <strong>13 號</strong>順利獨贏過終點，獨贏派彩高達 <strong>$110 港元</strong>，位置亦派 <strong>$38.5 港元</strong>！<br>
+                • <strong>第二名：</strong> 9 號（官方大路馬）<br>
+                • <strong>第三名：</strong> <strong>15 號</strong>衝入跑入第三，位置派 <strong>$28 港元</strong>！
+              </span>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>高勝率盈利分析：</strong>對於買獨贏/位置（WP）嘅馬迷，喺 5 隻隱蔽落飛馬當中成功<strong>命中 2 隻跑入前三名</strong>，喺概率上享有極高嘅贏錢優勢！而對於鍾意買組合嘅馬迷，將呢幾隻心水互串，即可輕鬆命中 <strong>13 - 15 位置Q (QPL)，派彩高達 $132 港元！</strong>透過反向剔除公眾盲點，呢套系統能經常幫你勾勒出高回報嘅冷門組合。
+            </li>
+            <li>
+              <strong>多用多練累積經驗：</strong>請記住，呢個篩選技巧並非套套皆準，絕不能盲目跟從。你越用得頻密、練得越多，預測就會越準。你可以善用我哋嘅「賽事重温」 (P27) 嚟反覆練習。依家就建議你直接入去呢場示範賽事頁面，邊睇截圖邊對照一齊操作 (P28)。
+            </li>
+          </ul>
+          
+          <!-- 流動端分享掣 -->
+          <div *ngIf="running_on_mobile_boolean" style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <ion-button (click)="shareGuide()" shape="round" style="--background: #0288d1; --color: white; font-weight: bold; --box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+              <ion-icon slot="start" name="share-social-outline"></ion-icon>
+              <span>分享此教學至電腦觀看</span>
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+
+    <!-- 
+      <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh'">
+        <ion-card style="width: 100%; max-width: 800px; margin: 10px;">
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+              運用即埸貼士數據尋找高水馬
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+              <li style="margin-bottom: 12px;">
+                <strong>前往賠率頁面：</strong>喺「賽事選擇」頁面 (P12)，撳「賠率」掣。我哋會用 2026 年 6 月 6 日英國葉森打吡賽日嘅第 5 場一級賽作為示範數據。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>篩選獨贏賠率：</strong>入到賠率頁面後，撳「獨贏走勢」掣 (P13) 嚟只顯示獨贏賠率。然後撳兩次頂部嘅「選擇賠率」掣 (P14)。介面起初會同時顯示香港和海外賠率數據，但我哋想先將焦點擺喺海外嘅獨贏賠率數據上。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>尋找海外賠率欄目：</strong>向右拉，搵返「海外離沙圈」同「海外隔夜」呢兩個欄目 (P14)。介面顯示嘅海外賠率係匯集咗大約 15 間唔同外博公司嘅「最佳賠率（最高回報）」數據。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>了解數據時段：</strong>RGTS 會全自動記錄以下關鍵時段嘅賠率 (P15)：「隔夜」、「亮相圈/離沙圈（即起步前約 5 至 6 分鐘）」、「最後 3 分鐘」、「最後 1 分鐘」同「即時」。至於即時賠率，RGTS 喺開閘前最後 10 分鐘內，每 60 秒就會全自動更新一次。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>搵出起步前落飛馬：</strong>對比「海外離沙圈」同「海外隔夜」兩欄，篩選出邊隻馬嘅臨場離沙圈賠率比隔夜賠率低。以呢場賽事為例，有四隻馬符合呢個條件：5號、8號、13號、14號 (P16)。呢幾隻就係你需要高度留意嘅目標。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>分析本地大熱門：</strong>依家再撳一次「選擇賠率」掣，喺上述兩個海外欄目中間，會多出一個名為「隔夜」嘅欄目，呢個係香港嘅隔夜獨贏賠率。我哋可以睇吓邊隻係香港嘅大熱門。呢場隔夜大熱門係 7 號馬，但對比佢嘅海外離沙圈賠率 (3.7) 同海外隔夜賠率 (3.2)，會發現佢喺離沙圈時賠率反而變冷 (P17)。呢個現象通常代表隻大熱門臨場無強烈嘅資金支持。換句話講，呢場一級賽好有機會爆冷，非常適合向冷門馬埋手。
+              </li>
+
+              <li style="margin-bottom: 12px;">
+                <strong>評估超巨型冷門：</strong>再睇埋其餘三隻篩選出嚟嘅馬：5號、13號同14號。呢幾隻馬喺離沙圈時嘅賠率分別係 81倍、91倍同 81倍，屬於超級大冷門。有精明資金衝住呢幾隻大冷門而嚟，相信係因為有幕後知情人士睇穿咗大熱門 7 號並不穩陣——好大程度係因為當時跑道轉為「黏地至軟地」，而呢幾隻冷馬正好具備特佳嘅軟地性能。如果你依然好鍾意隻 7 號大熱門，而你打算投注連贏、位置Q、二重彩或其他組合，建議只宜將 7 號當作「腳」，千萬唔好用嚟做「單膽」。例如你要買一膽三腳嘅連贏，7 號應該擺喺三隻腳入面，而唔係做膽個隻。
+              </li>
+
+              <li style="margin-bottom: 12px;">
+                <strong>監察即時飛數變動及賽果：</strong>你隨時都可以用同樣嘅方法，去對比「海外隔夜」同「海外即時」賠率 (P18)。我哋強烈建議以「離沙圈」時段作為你嘅核心分析據點。由呢個時間點開始，密切監察最後 3 分鐘同 1 分鐘嘅飛數波動。睇返我哋手頭上嘅心水名單（5、8、13、14號），好明顯見到 8 號馬有極其強烈嘅精明資金湧入，因為佢嘅最後 3 分鐘同 1 分鐘賠率欄目都著咗「綠燈」，代表呢兩個時段嘅賠率都急跌咗 20% 或以上 (P19)。最終，呢隻 8 號馬不負眾望順利獨贏過終點，官方獨贏派彩為 $65 港元 (P20)！對比返佢原本喺香港隔夜有 20倍、海外隔夜有 15倍嘅落飛情況，正好印證咗臨場巨大投注量所帶來嘅威力。
+              </li>
+
+              <li>
+                <strong>多用多練累積經驗：</strong>請記住，呢個篩選技巧並非套套皆準，絕不能盲目跟從。你越用得頻密、練得越多，預測就會越準。你可以善用我哋嘅「賽事日歷史回顧功能」 (P20) 嚟反覆練習。依家就建議你直接入去呢場示範賽事頁面，邊睇截圖邊對照一齊操作 (P21)。
+                <span *ngIf= "running_on_mobile_boolean" 
+                  style="display: block; margin-top: 8px; color: #1b5e20;">
+                  💡 <strong>實戰小貼士：</strong>你可以撳下面個 <strong>「分享此教學」</strong> 掣，將個網址傳去你嘅電腦度開。用電腦大螢幕睇住教學，同時用手機開住個 App 嚟對照實操，練習效果會最好！
+                </span>
+              </li>
+
+            </ul>
+
+          </ion-card-content>
+        </ion-card>
+      </div>
+    -->
+
+    <!-- <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            即場落飛(著燈馬)投注技巧
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>Review race result data:</strong> After each races completed, do the following to review the result data. From the Race Selection Page, press the Race 1 "Offical Dividend" button (P26). We will use 06/06/2026 Epsom United Kingdom meeting as our sample data. 
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Learn the basic:</strong> From the Dividend Result Page, tab on the "Result" button (P27), scroll to the right and locate the "Win 1min" and "Win 3min" columns (P27), there were no "Green" or "Brown" colors assoicated on the horses finished at 1st, 2nd or 3rd positions. We will label this race 1 as Placed 0. Keep in mind that the "Green" color means the odds was drop by 20% or more and the "Brown" color means odds drop by 50% or more. Also, under the "Win Odds" (final) column there are three horses having the "Green" color; however, we won't count this "Win Odds" data column because very often the "Green" color horses occurred very late, about 15 to 30 secs before race started ie even you spotted them, you can't bet on it as it's too late to do so. Now press the R2 button at the top (P28), for this Race 2 under the "Win 1 min" column, there was a "Green" color associated to the horse number 10 Rlasthope, and this horse finished at 3rd, we will label this race 2 as "Placed 1" because it's the first race of this race day that met this condition. 
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Review the result data:</strong> Continue the same process for the remaining races, race 3 to race 8 (P28 to P33). R3 no color associated on any horses so the count remained at Place 1, note since this race 3 had no color so you won't take any actions on this race. R4 (P24) also no color associated on any horses even though there were four horses had "Green" color under the "Win Odds" column, as we explained earlier, we won't count them. R5 (P25) had one horse under "Win 1min" had the "Green" color so we label it as "Place 2".  R6 (P26) had no color associated on any horses. R7 (P27) had one horse under "Win 1min" had the "Green" color so we label it as "Place 2". R8 (P28) had no color associated on any horses.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Apply the 40% max rule:</strong> For overseas races, from the past 5 years historical data, we found out that there was about 40% of races per each race day will meet this condition. ie Let's say there were 8 races on any race day. There were max 3 races will meet this condition. Having this percentage on hand, you should bet on the R7 race using this technique because the current count was Place 1 and you are at R7 that means, it's a very high chance that the "Green" color horse will be finished among the 1st, 2nd or 3rd. For R7, horse number 9 which had the "Green" color assoicated on the "Win 1min" column fishihed 1st and its Official Win Dividend paid $105 HKD and Place Dividend paid $18 HKD (P28). 
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Action:</strong> Let's say you were in the live racing day and reviewed the Race 6's Dividend Result Page and the count was remined at "Placed 1". Simply go back to the "Odds Page", select "Win Trend" and make sure that you were viewing Hong Kong data and you should see the horse number 9 had the "Green color" assoicated with (P29). Keep in mind the 40% rule and in terms of number of races, the magic number is "3", ie after the counter hit "Placed 3", consider not to use this technique even though you should have won some money already. 
+            </li>
+          </ul>
+        </ion-card-content>
+      </ion-card>
+    </div> -->
+
+
+    <h1 style="text-align: center;color: whitesmoke; 
+      font-size: 33px; margin-bottom: 0px;">
+      <span *ngIf="currentLang === 'zh'">海外賽事 <br> 
+        <span style="font-size: 20px; display: inline-block; line-height: 1; font-style: italic; color: aqua;">
+          即場落飛（著燈馬）投注技巧：運用 40% 機率上限法則
+        </span>
+      </span>
+
+      <span *ngIf="currentLang === 'en'">World Pool Races <br> 
+        <span style="font-size: 22px; display: inline-block; line-height: 1; font-style: italic;
+          color: aqua;">
+          Live Smart Money Indicator: Using the 40% Max Probability Rule
+        </span>
+      </span>
+    </h1>
+
+    <!-- START: For images div -->
+    <div class="scrollable-row-container">
+      <div class="custom-row">
+        <!-- COLUMN 1 (P29) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P29</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-29-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-29-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-29-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-29-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-29-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-29-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-29-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-29-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P29"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P30) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P30</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-30-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-30-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-30-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-30-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-30-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-30-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-30-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-30-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P30"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+
+        <!-- COLUMN 1 (P31) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P31</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-31-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-31-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-31-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-31-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-31-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-31-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-31-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-31-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P31"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P32) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P32</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-32-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-32-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-32-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-32-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-32-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-32-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-32-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-32-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P32"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P33) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P33</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-33-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-33-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-33-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-33-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-33-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-33-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-33-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-33-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P33"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P34) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P34</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-34-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-34-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-34-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-34-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-34-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-34-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-34-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-34-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P34"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P35) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P35</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-35-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-35-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-35-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-35-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-35-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-35-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-35-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-35-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P35"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P36) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P36</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-36-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-36-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-36-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-36-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-36-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-36-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-36-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-36-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P36"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P37) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P37</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-37-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-37-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-37-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-37-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-37-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-37-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-37-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-37-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P37"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P38) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P38</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-38-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-38-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-38-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-38-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-38-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-38-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-38-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-38-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P38"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P39) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P39</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-39-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-39-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-39-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-39-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-39-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-39-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-39-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-39-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P39"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P40) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P40</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-22-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-22-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-22-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-22-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-22-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-22-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-22-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-22-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P40"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+        <!-- COLUMN 1 (P41) -->
+        <div class="custom-col">
+          <h2 style="color: black; text-align: center;">P41</h2>
+          <img 
+            src="assets/img/RGTS-QS-WP-SH-41-1080-2640.webp"
+            srcset="
+              assets/img/RGTS-QS-WP-SH-41-203-496.webp 203w,
+              assets/img/RGTS-QS-WP-SH-41-303-739.webp 303w,
+              assets/img/RGTS-QS-WP-SH-41-360-878.webp 360w,
+              assets/img/RGTS-QS-WP-SH-41-406-992.webp 406w,
+              assets/img/RGTS-QS-WP-SH-41-450-1098.webp 450w,
+              assets/img/RGTS-QS-WP-SH-41-496-1210.webp 496w,
+              assets/img/RGTS-QS-WP-SH-41-1080-2640.webp 1080w
+            "
+            sizes="(max-width: 480px) 360px, (max-width: 768px) 450px, 496px"
+            alt="World Pool Quick Start P41"
+            class="responsive-img-no-max-height" 
+            loading="lazy" 
+          />
+        </div>
+
+
+      </div>
+      <!-- END: <div class="custom-row"> -->
+    </div>
+    <!-- END: For images div -->
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            Live Smart Money Indicator: Using the 40% Max Probability Rule
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>Review Each Races Results:</strong> After each race concludes, use our tools to analyze the final outcome patterns. From the Race Selection Page, press the Race 1 "Official Dividend" button (P29). We will use the Epsom United Kingdom meeting on 05/06/2026 as our live sample data.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Learn the Color Indicators:</strong> On the Dividend Result Page, tap the "Result" button (P30) and scroll right to locate the "Win 1min" and "Win 3min" columns. 
+              <span style="display: block; margin-top: 5px; padding-left: 10px; border-left: 3px solid #0288d1;">
+                • <strong style="color: #2e7d32;">Green Highlight:</strong> Indicates a sharp late odds drop of <strong>20% or more</strong>.<br>
+                • <strong style="color: #930;">Brown Highlight:</strong> Indicates a massive late odds drop of <strong>50% or more</strong>.
+              </span>
+              In Race 1, no color highlights appeared on any of the top 3 finishers, so we log this race day counter as <strong>Count: 0</strong>. 
+              <br><br>
+              *<em>Note: We completely ignore the "Win Odds" (Final Odds) column, as these drops might occur 15–30 seconds before the gates open—making it physically too late for you to place a bet.</em>
+              <br><br>
+              Now, tap the "R2" button at the top (P31). In Race 2, horse number 10 ("Rlasthope") carried a <span style="color: #2e7d32; font-weight: bold;">Green</span> highlight in the "Win 1min" column and successfully finished 3rd. Since this is the first race to meet our criteria, we update our daily tracker to <strong>Count: 1</strong>.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Trace the Remaining Card:</strong> Continue auditing the rest of the card from Race 3 to Race 8 (P32 to P37):
+              <span style="display: block; margin-top: 8px; padding-left: 10px; border-left: 3px solid #ccc;">
+                • <strong>Race 3 & 4:</strong> No live color indicators on top 3 finishers. Counter remains at <strong>Count: 1</strong>. (No action taken).<br>
+                • <strong>Race 5:</strong> One runner hit a Green highlight in the "Win 1min" column and placed. Counter updates to <strong>Count: 2</strong>.<br>
+                • <strong>Race 6:</strong> No live color indicators on top 3 finishers. Counter remains at <strong>Count: 2</strong>.<br>
+                • <strong>Race 7:</strong> Another runner hit a Green highlight in the "Win 1min" column and won! Counter updates to <strong>Count: 3</strong>.
+              </span>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Apply the 40% Max Rule:</strong> Based on 5 years of extensive historical data for overseas meetings, our statistics show that an average of <strong>only 40% of races per race day</strong> will successfully hit this late-drop criteria. On an 8-race card, the absolute mathematical ceiling is a maximum of 3 successful races (the magic number is 3). Knowing this rule gives you an immense live edge! If you are sitting at Race 6 and the counter is still resting at a low "Count: 2", the probability of a late-drop horse striking the frame in Race 7 becomes statistically massive. 
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Live Execution Strategy:</strong> Imagine you are playing live: you review Race 6 and see the day's counter is still lagging at "Count: 2". For Race 7, you immediately go back to the "Odds Page", select "Win Trend", filter for Hong Kong data, and notice horse number 9 lighting up with a <span style="color: #2e7d32; font-weight: bold;">Green</span> indicator (P38). Trusting the 40% regression rule, you strike. Horse number 9 won Race 7 comfortably, paying out an incredible official Win Dividend of <strong>$105 HKD</strong> and <strong>$18 HKD</strong> for Place (P39)! Once your daily counter hits <strong>Count: 3</strong>, stop using this technique for the day, protect your winnings, and use it again for the next race day.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Practice Makes Perfect:</strong> Please note that this strategy cannot be applied blindly to every single race. The more you practice this filtering technique using our "Past Race Day Reviews Page" (P40), the sharper your analysis will become. We suggest opening this sample race right now to follow along step-by-step (P41). 
+              <span *ngIf= "running_on_mobile_boolean" 
+                style="display: block; margin-top: 8px; color: #1b5e20;">
+                💡 <strong>Pro Tip:</strong> Tap the <strong>"Share This Guide"</strong> button below to send this URL to your desktop computer. Reading the guide on a larger screen while playing with the data inside your mobile app makes practicing much easier!
+              </span>
+            </li>
+          </ul>
+
+          <!-- Mobile Share Button -->
+          <div *ngIf="running_on_mobile_boolean" style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <ion-button (click)="shareGuide()" shape="round" style="--background: #0288d1; --color: white; font-weight: bold; --box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+              <ion-icon slot="start" name="share-social-outline"></ion-icon>
+              <span>Share This Guide to Desktop</span>
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh'">
+      <ion-card style="width: 100%; margin: 10px;">
+        <ion-card-header style="padding-bottom: 0;">
+          <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+            即場落飛（著燈馬）投注技巧：運用 40% 機率上限法則
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ul class="quickStarted" style="padding-inline-start: 18px; list-style-type: disc;">
+            <li style="margin-bottom: 12px;">
+              <strong>重温各場賽事賽果：</strong>每場賽事完結後，大家可利用系統重溫數據走勢。喺「賽事選擇」頁面，撳第一場嘅「正式派彩」掣 (P29)。我哋將以 2026 年 6 月 5 日英國葉森賽日作為實戰數據示範。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>掌握燈號基本功：</strong>入到正式派彩頁面後，撳「詳細賽果」掣 (P30) 並拉向右邊，搵出「獨贏 1分鐘」同「獨贏 3分鐘」兩個欄目。
+              <span style="display: block; margin-top: 5px; padding-left: 10px; border-left: 3px solid #0288d1;">
+                • <strong style="color: #2e7d32;">綠色提示（綠燈）：</strong>代表獨贏賠率臨場急跌 <strong>20% 或以上</strong>。<br>
+                • <strong style="color: #930;">啡色提示（啡燈）：</strong>代表獨贏賠率臨場瘋狂急跌 <strong>50% 或以上</strong>。
+              </span>
+              睇返第一場，跑入前三名（冠、亞、季軍）嘅馬匹臨場完全無著任何綠燈或啡燈，因此我哋將今日嘅落飛計數器記為 <strong>中燈次數：0 次</strong>。
+              <br><br>
+              *<em>備忘：我哋會全面忽略「獨贏賠率」(最後賠率）欄目，因為呢類落飛有時候喺開閘前 15–30 秒才出現，即使你睇到都根本趕唔切落注。</em>
+              <br><br>
+              依家撳頂部嘅「R2」掣睇第二場 (P31)。喺第二場嘅「Win 1min」欄目中，10 號馬「Rlasthope」著咗<span style="color: #2e7d32; font-weight: bold;">綠燈</span>，並且順利跑入第三名。由於呢隻係今日第一隻符合條件嘅落飛上名馬，我哋將今日嘅落飛計數器更新為 <strong>中燈次數：1 次</strong>。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>追蹤全日賽事線索：</strong>用同樣方法去審視剩餘嘅第三場至第八場賽事 (P32 至 P37)：
+              <span style="display: block; margin-top: 8px; padding-left: 10px; border-left: 3px solid #ccc;">
+                • <strong>第三、四場：</strong> 前三名馬匹均無臨場著燈，計數器維持喺 <strong>1 次</strong>（呢兩場完全略過不作動作）。<br>
+                • <strong>第五場：</strong> 有一隻喺「獨贏 1分鐘」著綠燈嘅馬成功上名，計數器更新為 <strong>2 次</strong>。<br>
+                • <strong>第六場：</strong> 前三名馬匹均無臨場著燈，計數器維持喺 <strong>2 次</strong>。<br>
+                • <strong>第七場：</strong> 再有一隻喺「獨贏 1分鐘」著綠燈嘅冷門馬順利跑第一！計數器更新為 <strong>3 次</strong>。
+              </span>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>運用 40% 上限法則：</strong>根據過去 5 年海外賽事嘅龐大歷史數據顯示，我哋發現平均<strong>每賽日只有約 40% 嘅場次</strong>會成功開出呢種「臨場著燈上名」嘅規律。以一日 8 場賽事計算，全日開出嘅上限數目最多只有 3 場（「3」就是全日嘅魔術數字）。呢個數據能為你帶黎極大嘅即場優勢！假設你玩到第六場，全日計數器依然停留喺極低嘅「2 次」，咁去到第七場時，臨場著燈馬跑入前三名嘅統計機率就會幾何級數飆升，屬於極佳嘅出擊時機。
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>臨場實戰心法：</strong>假設你身處賽事日，睇完第六場賽果發現全日計數器依然卡喺「2 次」。嚟到第七場，你立刻返回「賠率頁面」查看「獨贏走勢」，鎖定香港數據，就會見到 9 號馬喺開閘前正正著緊<span style="color: #2e7d32; font-weight: bold;">綠燈</span> (P38)。基於 40% 數據回歸定律，呢個就是最強嘅出擊訊號！最終，呢隻 9 號馬喺第七場輕鬆獨贏過終點，官方獨贏派彩高達 <strong>$105 港元</strong>，位置亦派 <strong>$18 港元</strong> (P39)！切記當全日計數器一達到 <strong>3 次</strong>，代表次數上限已滿，今日就應停用這技巧，保留盈利，留待下次賽事再使用！
+            </li>
+            <li>
+              <strong>多用多練累積經驗：</strong>請記住，呢個篩選技巧並非套套皆準，絕不能盲目跟從。你越用得頻密、練得越多，預測就會越準。你可以善用我哋嘅「賽事重溫」 (P40) 嚟反覆練習。依家就建議你直接入去呢場示範賽事頁面，邊睇截圖邊對照一齊操作 (P41)。
+              <span *ngIf= "running_on_mobile_boolean" 
+                style="display: block; margin-top: 8px; color: #1b5e20;">
+                💡 <strong>實戰小貼士：</strong>你可以撳下面個 <strong>「分享此教學」</strong> 掣，將個網址傳去你嘅電腦度開。用電腦大螢幕睇住教學，同時用手機開住個 App 嚟對照實操，練習效果會最好！
+              </span>
+            </li>
+
+          </ul>
+
+          <!-- 流動端分享掣 -->
+          <div *ngIf="running_on_mobile_boolean" style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #eee;">
+            <ion-button (click)="shareGuide()" shape="round" style="--background: #0288d1; --color: white; font-weight: bold; --box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+              <ion-icon slot="start" name="share-social-outline"></ion-icon>
+              <span>分享此教學至電腦觀看</span>
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+
+    <!-- ******************************* -->
+
+
+    <!-- START: 06142026 Original Quick Start Guide -->
+    <!-- <h1 style="text-align: center;color: blue; 
+      font-size: 33px; margin-bottom: 0px;">
+      <span *ngIf="currentLang === 'zh'">用戶免費試用步驟</span>
+      <span *ngIf="currentLang === 'en'">Free trial steps</span>
+    </h1> -->
+
+
+    <ng-container *ngIf= "!running_on_mobile_boolean">
+      <!-- START: Copied 06142026 (1) -->
+      <div style="text-align: center;">
+        <ion-card>
+          <!-- NOTE: Add width: 100%-->
+          <!-- <img style="width: 100%;" alt="免費試用" src="assets/img/Snapshot_12.webp" appLoadImage (loadComplete)="onLoadComplete($event)" /> -->
+          <!-- <img style="width: 100%;" alt="免費試用" src="assets/img/Snapshot_12.webp" /> -->
+          <ion-card-header>
+            <ion-card-title style="text-align: justify; font-weight: bolder; font-size: 24px;">
+              <span *ngIf="currentLang === 'zh'">用戶免費試用步驟</span>
+              <span *ngIf="currentLang === 'en'">Free trial steps</span>
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content style="text-align: justify;">
+            <ol class="quickStarted" style="margin: 0; padding: 0; padding-left: 25px; font-size: 23px;">
+              <li>
+                由主頁按走地掣(圖片1)
+              </li>
+              <li>
+                於賽事選擇頁中按免費試用掣(圖片2)。注意：如免費試用掣為灰色，代表這賽馬日的免費試用名額已滿，而免費試用將於每個賽馬日前之排位日開始按受登記，額滿即止。用戶可於首頁按日票通掣購買數據服務。
+              </li>
+              <li>
+                於套餐選擇頁中按全餐及確認掣(圖片3)。
+              </li>
+              <li>
+                於登入/註冊頁中輸入已註冊的電郵地址及密碼後按確認掣，還未註冊用戶請按註冊掣(圖片4)。
+              </li>
+              <li>
+                成功登入後按進入交易區掣(圖片5)。
+              </li>
+              <li>
+                於交易頁中按藍色掣(圖片6)。
+              </li>
+              <li>
+                登記免費試用步驟已完成，按進入主頁掣(圖片7)。
+              </li>
+            </ol>
+          </ion-card-content>
+        </ion-card>
+      </div> 
+      <!-- END: *ngIf= "!running_on_mobile_boolean" 用戶免費試用步驟 -->
+      <!-- END: Copied 06142026 (1) -->
+  
+
+      <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'en'">
+        <ion-card style="width: 100%; margin: 10px;">
+          <!-- <img style="width: 100%;" alt="免費試用" src="assets/img/Snapshot_12.webp" /> -->
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+              User Registration: Free Trial Activation Steps
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <!-- Optional: Keep your screenshot header here if needed -->
+            <!-- <img style="width: 100%; border-radius: 8px; margin-bottom: 15px;" alt="Free Trial Guide" src="assets/img/Snapshot_12.webp" /> -->
+
+            <ol class="quickStarted" style="padding-inline-start: 20px; font-size: 16px; color: #333; line-height: 1.5;">
+              <li style="margin-bottom: 14px;">
+                <strong>Access Live Interface:</strong> From the application Home Page, tap the <strong>"Live Play"</strong> button (Image 1) to open the live racing dashboard.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Claim Free Access:</strong> On the Race Selection Page, tap the <strong>"Free Trial"</strong> button (Image 2). 
+                <span style="display: block; margin-top: 8px; padding: 10px; background-color: #fff8e1; border-left: 4px solid #ffb300; font-size: 14px; color: #5d4037; border-radius: 0 4px 4px 0;">
+                  ⚠️ <strong>Important Note regarding Quota Limits:</strong> If the "Free Trial" button appears greyed out, it means the complimentary quota for this specific race day has been completely exhausted. Free trial registrations open immediately on <strong>Declarations Day</strong> for each meeting and operate on a strict first-come, first-served basis. If the quota is full, you can purchase data access instantly by tapping the <strong>"Day Pass"</strong> button on the Home Page.
+                </span>
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Select Package tier:</strong> On the Package Selection Page, select the <strong>"Plan All"</strong> option and tap the <strong>"Confirm"</strong> button (Image 3).
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Account Authentication:</strong> On the Login/Registration Page, enter your registered email address and password, then tap <strong>"Confirm"</strong>. If you do not have an account yet, tap the <strong>"Registration"</strong> button (Image 4) to create one instantly.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Enter Trading Zone:</strong> Upon successful authentication, tap the <strong>"Enter Trading Zone"</strong> button (Image 5) to proceed.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Authorize Trial:</strong> Inside the main transaction panel, tap the prominent <strong>"Blue Button"</strong> (Image 6) to initialize your free trial day pass.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Activation Complete:</strong> Your complimentary access is now fully authorized! Tap the <strong>"Go to Home Page"</strong> button (Image 7) to start tracking live odds data.
+              </li>
+            </ol>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div style="display:flex; justify-content: center;" *ngIf="currentLang === 'zh-HK' || currentLang === 'zh'">
+        <ion-card style="width: 100%; margin: 10px;">
+          <!-- <img style="width: 100%;" alt="免費試用" src="assets/img/Snapshot_12.webp" /> -->
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 22px; font-weight: bold; color: black;">
+              用戶免費試用登記步驟
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <!-- 如需保留頂部附圖，可解開此註解 -->
+            <!-- <img style="width: 100%; border-radius: 8px; margin-bottom: 15px;" alt="免費試用教學" src="assets/img/Snapshot_12.webp" /> -->
+
+            <ol class="quickStarted" style="padding-inline-start: 20px; font-size: 16px; color: #333; line-height: 1.5;">
+              <li style="margin-bottom: 14px;">
+                <strong>進入走地介面：</strong>由主頁按<strong>「走地」</strong>掣（圖片1）進入實戰數據中心。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>登記免費試用：</strong>於賽事選擇頁中按<strong>「免費試用」</strong>掣（圖片2）。
+                <span style="display: block; margin-top: 8px; padding: 10px; background-color: #fff8e1; border-left: 4px solid #ffb300; font-size: 14px; color: #5d4037; border-radius: 0 4px 4px 0;">
+                  ⚠️  <strong>注意（名額限制）：</strong>如「免費試用」掣顯示為灰色，代表該賽馬日嘅免費名額已經全數爆滿。免費試用登記會喺每個賽馬日前嘅<strong>排位日</strong>開始接受登記，額滿即止。如果名額已滿，用戶可隨時於首頁按<strong>「日票通」</strong>掣購買即日數據服務。
+                </span>
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>選擇服務套餐：</strong>於套餐選擇頁中選擇<strong>「全餐」</strong>並按<strong>「確認」</strong>掣（圖片3）。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>登入或建立帳戶：</strong>於登入/註冊頁中輸入已註冊嘅電郵地址同密碼，然後按<strong>「確認」</strong>。未註冊嘅新用戶，請按<strong>「註冊」</strong>掣（圖片4）建立新帳戶。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>進入交易區域：</strong>成功登入後，按<strong>「進入交易區」</strong>掣（圖片5）。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>確認啟動數據：</strong>於交易頁面中，直接按<strong>「藍色」</strong>掣（圖片6）以啟動免費試用權限。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>完成登記程序：</strong>免費試用步驟已全部完成！依家按<strong>「進入主頁」</strong>掣（圖片7），即可開始體驗即場走地數據分析。
+              </li>
+            </ol>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+
+      <h1 *ngIf="!running_on_mobile_boolean && currentLang === 'en'" style="text-align: center; color: #0288d1; font-size: 30px; font-weight: bold; margin-bottom: 5px;">
+        🐎 How to Use Easy Pick ✨
+      </h1>
+
+      <h1 *ngIf="!running_on_mobile_boolean && currentLang === 'zh'" style="text-align: center; color: #0288d1; font-size: 30px; font-weight: bold; margin-bottom: 5px;">
+        🐎 如何使用走地易 ✨
+      </h1>
+
+
+      <p *ngIf="!running_on_mobile_boolean && currentLang === 'en'" style="text-align: center; color: #666; font-size: 16px; font-weight: 500; margin-top: 0; margin-bottom: 15px; font-style: italic;">
+        Simple to Learn. Effortless to Use. Engineered to Win.
+      </p>
+
+      <p *ngIf="running_on_mobile_boolean && currentLang === 'zh'" style="text-align: center; color: #666; font-size: 16px; font-weight: 500; margin-top: 5px; margin-bottom: 15px; font-style: italic;">
+        易學、易用、易贏馬！
+      </p>
+
+
+      <div *ngIf= "!running_on_mobile_boolean" style="overflow: scroll;">
+        <ion-row style="width: max-content;">
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 1</h2>
+            <!-- <img alt="免費試用" src="assets/img/mobile_1_rgts_main_screen_4_freeTrial.webp" /> -->
+            <img #pinchElement alt="如何使用走地易" src="assets/img/How_To_Use_Chi_P1.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 2</h2>
+            <!-- How_To_Use_Chi_P2 -->
+            <img id=pinchElement1 alt="如何使用走地易" src="assets/img/How_To_Use_Chi_P2.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 3</h2>
+            <img id=pinchElement2 alt="如何使用走地易" src="assets/img/How_To_Use_Chi_P3A.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 4</h2>
+            <img id=pinchElement3 alt="如何使用走地易" src="assets/img/How_To_Use_Chi_P3B.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 5</h2>
+            <img id=pinchElement4 alt="如何使用走地易" src="assets/img/How_To_Use_Chi_P4.webp" loading="lazy"/>
+          </ion-col>
+        </ion-row>
+      </div>
+
+
+      <div *ngIf="!running_on_mobile_boolean" style="display:flex; justify-content: center; 
+        flex-direction: column; align-items: center;">
+
+        <!-- PART 1: CORE COMPONENTS -->
+        <ion-card *ngIf="currentLang === 'en'" style="width: 100%; margin: 10px;">
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 20px; font-weight: bold; color: black;">
+              Easy Pick Core Architecture
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content style="font-size: 15px; color: #333; line-height: 1.5;">
+            <p style="margin-top: 5px; margin-bottom: 15px;">
+              The Easy Pick interface simplifies live data tracking by highlighting actionable patterns across <strong>three core pillars</strong>:
+            </p>
+            
+            <ol class="quickStarted" style="padding-inline-start: 20px; margin-bottom: 20px;">
+              <li style="margin-bottom: 12px;">
+                <strong>Value Drops (Smart Money Runners):</strong> Color-highlighted numbers on the grid (such as horses 2, 7, 9, and 12 in Image 1) identify runners getting sharp, late backing.
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>Momentum Index (Hot Form):</strong> Color highlights on the grid (such as horses 3, 4, and 6 in Image 2) represent the top 3 highest-rated momentum contenders for the current race.
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>Live Meeting Reports:</strong> Accessible via Images 3 and 4, these summary streams provide live, aggregate data for Value Drops and Momentum trends. Cross-referencing these sheets with historical medians allows you to narrow down selections with incredible statistical accuracy.
+              </li>
+            </ol>
+
+            <div style="padding: 12px; background-color: #f5f5f5; border-radius: 6px; font-size: 14px; border-left: 4px solid #0288d1; line-height: 1.4;">
+              💡 <strong>Pro Tip:</strong> The algorithmic tracking engine powering Easy Pick's <strong>Value Drops</strong> matches our core <strong>Betting Distribution matrix</strong> (Image 5). Refer to the Quick Start references below to see how these signals operate.
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+        <!-- 第一部分：核心組成 -->
+        <ion-card *ngIf="currentLang === 'zh'"  style="width: 100%; margin: 10px;">
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 20px; font-weight: bold; color: black;">
+              走地易三大核心架構
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content style="font-size: 15px; color: #333; line-height: 1.5;">
+            <p style="margin-top: 5px; margin-bottom: 15px;">
+              走地易將繁複嘅即場數據精簡化，透過簡單嘅色彩提示，為用戶鎖定<strong>三大核心數據</strong>：
+            </p>
+            
+            <ol class="quickStarted" style="padding-inline-start: 20px; margin-bottom: 20px;">
+              <li style="margin-bottom: 12px;">
+                <strong>高水馬（聰明錢落飛訊號）：</strong> 介面中帶有顏色顯示嘅馬匹（例如圖片1中嘅 2、7、9、12 號馬）即代表臨場有強烈資金流入。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>旺指（旺勢指數）：</strong> 介面中帶有顏色顯示嘅馬（例如圖片2中嘅 3、4、6 號馬）代表該場賽事當前走勢最強勁嘅頭三名馬匹。
+              </li>
+              <li style="margin-bottom: 12px;">
+                <strong>賽日數據（即時報表）：</strong> 圖片3同4提供即時高水馬與旺指嘅走勢圖表。配合中位數大數法則，能夠極速縮減揀馬範圍，實戰價值極高。
+              </li>
+            </ol>
+
+            <div style="padding: 12px; background-color: #f5f5f5; border-radius: 6px; font-size: 14px; border-left: 4px solid #0288d1; line-height: 1.4;">
+              💡 <strong>實戰備忘：</strong> 走地易所顯示嘅 <strong>高水馬</strong> 運算核心，與走地通另一主力功能「投注分佈」（圖片5）嘅演算法完全相通。建議參閱快速入門指南作全面對照。
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+
+
+      <h1 *ngIf="!running_on_mobile_boolean && currentLang === 'en'" style="text-align: center; color: #0288d1; font-size: 30px; font-weight: bold; margin-bottom: 5px;">
+          🎯 Mastering Meeting Medians 🚀
+      </h1>
+
+      <h1 *ngIf="!running_on_mobile_boolean && currentLang === 'zh'" style="text-align: center; color: #0288d1; font-size: 30px; font-weight: bold; margin-bottom: 5px;">
+          🎯 賽日中位數實戰心法 🚀
+      </h1>
+
+      <div *ngIf= "!running_on_mobile_boolean" style="overflow: scroll;">
+        <ion-row style="width: max-content;">
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 1</h2>
+            <!-- <img alt="免費試用" src="assets/img/mobile_1_rgts_main_screen_4_freeTrial.webp" /> -->
+            <img alt="賽日數據" src="assets/img/Screenshot_20241210_072150_-RGTS.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 2</h2>
+            <!-- How_To_Use_Chi_P2 -->
+            <img alt="賽日數據" src="assets/img/Screenshot_20241210_072026_-RGTS.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 3</h2>
+            <img alt="賽日數據" src="assets/img/Screenshot_20241210_072122_-RGTS.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 4</h2>
+            <img alt="賽日數據" src="assets/img/Screenshot_20241210_095751_-RGTS.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 5</h2>
+            <img alt="賽日數據" src="assets/img/Screenshot_20241210_095803_-RGTS.webp" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 6</h2>
+            <img alt="賽日數據" src="assets/img/Screenshot_20241210_095819_-RGTS.webp" loading="lazy"/>
+          </ion-col>
+        </ion-row>
+
+        <!-- New row with additional images -->
+        <ion-row style="width: max-content;">
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 7</h2>
+            <img id="pinchElement5" alt="賽日數據" src="assets/img/Snapshot_139.webp" class="responsive-img" loading="lazy"/>
+          </ion-col>
+          <ion-col>
+            <h2 style="color: black; text-align: center;">圖片 8</h2>
+            <img id="pinchElement6" alt="賽日數據" src="assets/img/Snapshot_137.webp" class="responsive-img" loading="lazy"/>
+          </ion-col>
+        </ion-row>
+
+        <!-- Button to toggle meta tag for zoom --> 
+        <!-- <ion-button (click)="toggleZoom()">Toggle Zoom_7</ion-button> -->
+
+      </div>
+
+      <div *ngIf="!running_on_mobile_boolean" style="display:flex; justify-content: center; flex-direction: column; align-items: center;">
+
+        <!-- PART 2: THE MEDIAN STRATEGY -->
+        <ion-card *ngIf="currentLang === 'en'" style="width: 100%; margin: 10px;">
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 20px; font-weight: bold; color: black;">
+              Mastering Meeting Medians (The 54% Law)
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content style="font-size: 15px; color: #333; line-height: 1.5;">
+            <ol class="quickStarted" style="padding-inline-start: 20px;">
+              <li style="margin-bottom: 14px;">
+                <strong>Access Live Trends:</strong> Tap the <strong>"Meeting Data"</strong> button (Image 1) on the Easy Pick panel to open the summary tracking suite.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>The Value Drop Baseline (54%):</strong> Multi-season data shows a steady Tier-1 placement split of <strong>5.4 to 4.6</strong> between late money drops and long odds. Statistically, late money selections fill 54% of top-3 positions. On a standard 10-race card (30 total tier placements), expect approximately <strong>16 late money selections</strong> to hit the board.
+              </li>
+              <li style="margin-bottom: 14px; padding-left: 8px; border-left: 3px solid #2e7d32;">
+                ⭐ <strong>Value Strategy (Balancing Overdue Tiers):</strong> Do not blindly chase late money horses. If 11 or 12 late money horses have already placed by Race 6 or 7, the remaining slots will lean heavily toward under-backed runners to hit the median. For a 1-Banker + 3-Legs ticket [INDEX], transition your staking strategy to a balanced <strong>2 Value + 2 Under-backed</strong> combo rather than overloading on late indicators.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>The Momentum Baseline (Median: 8):</strong> Comprehensive multi-season analytics prove that the top 3 highest-rated Momentum Index runners will hit a median placement count of exactly <strong>8 tier positions per card</strong> (Images 7 & 8).
+              </li>
+              <li style="margin-bottom: 14px; padding-left: 8px; border-left: 3px solid #c62828;">
+                ⭐ <strong>Momentum Strategy (Fading Peaks):</strong> If 6 or 7 runners from the top 3 Momentum tier have already placed by Race 6 or 7, look lower down the board. The probability of the top-3 momentum group hitting consecutive tiers drops dramatically. Pivot your strategy to target runners ranked 4th, 5th, or 6th in the index.
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Advanced Live Integration (Case Study):</strong> Look at the Sha Tin data from December 1, 2024 (Images 2 & 3). After Race 5, you are handicapping Race 6. 
+                <br><br>
+                • <em>Value Report check:</em> Race 5 swept all 3 positions with late money highlights. Because that group peaked early, Race 6 has a lower probability of generating multiple late money hits. Your 4-runner ticket should split into 2 Value + 2 Under-backed entries.
+                <br><br>
+                • <em>Momentum Report check:</em> Races 4 and 5 had zero top-3 Momentum placements. This makes the top momentum tier highly overdue. For your 1-Banker + 3-Legs layout [INDEX], select your key **Banker** from the top 3 Momentum index horses, and round out your selections using the balanced Value matrix. This maximize your probability of hitting the exact tier window!
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>Off-Season Preparation:</strong> Study archive reports during non-racing days (Images 4, 5, & 6). Recognizing how these algorithms trend over an afternoon card will sharpen your reflexes during live trading sessions.
+              </li>
+            </ol>
+            
+            <p style="text-align: center; font-weight: bold; color: #2e7d32; font-size: 16px; margin-top: 20px; margin-bottom: 5px;">
+              Good Luck & Smart Tracking! 🚀
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+
+        <!-- 第二部分：大數中位數策略 -->
+        <ion-card *ngIf="currentLang === 'zh'" style="width: 100%; margin: 10px;">
+          <ion-card-header style="padding-bottom: 0;">
+            <ion-card-title style="font-size: 20px; font-weight: bold; color: black;">
+              解密大數法則：賽日中位數實戰心法
+            </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content style="font-size: 15px; color: #333; line-height: 1.5;">
+            <ol class="quickStarted" style="padding-inline-start: 20px;">
+              <li style="margin-bottom: 14px;">
+                <strong>開啟即時報表：</strong> 喺走地易介面撳<strong>「賽日數據」</strong>掣（圖片1）即可調出當天走勢數據。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>高水馬黃金比例 (54%)：</strong> 根據過去三個馬季嘅龐大數據統計，高水馬與低水馬跑入前三名（三甲）嘅比例恆定喺 <strong>5.4 比 4.6</strong>。全日平均有 54% 嘅三甲馬為高水馬。以一日 10 場賽事計算（總共 30 個三甲名額），大數據定律下會有約 <strong>16 匹高水馬</strong> 登入三甲。
+              </li>
+              <li style="margin-bottom: 14px; padding-left: 8px; border-left: 3px solid #2e7d32;">
+                ⭐ <strong>高水實戰心法（動態平衡）：</strong> 絕對唔好盲目跟買高水馬。假設今日跑完第 6 或第 7 場，三甲榜已經塞滿咗 11 至 12 匹高水馬，代表後半場大數據將會向低水馬修正。如果採用<strong>一膽拖三腳</strong>投注策略 [INDEX]，你嘅選馬組合就應調整為 <strong>2 匹高水馬 + 2 匹低水馬</strong>，平衡出擊。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>旺指頭三名常態（中位數：8）：</strong> 歷史數據證實，全日「旺指最高頭三位」嘅馬匹，跑入三甲嘅全日總數中位數為 <strong>8 匹</strong>（圖片7、圖片8）。
+              </li>
+              <li style="margin-bottom: 14px; padding-left: 8px; border-left: 3px solid #c62828;">
+                ⭐ <strong>旺指實戰心法（避開飽和點）：</strong> 如果跑完第 6 或 7 場，旺指頭三名馬匹已經有 6 至 7 匹跑入三甲，代表頭三名嘅紅利即將飽和。喺剩餘場次揀馬時，就要將目光移向<strong>旺指排第四、第五同第六位</strong>嘅冷門馬，因為高位馬再出擊嘅勝率統計上已開始轉弱。
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>雙數據完美融合（實戰範例）：</strong> 以 2024 年 12 月 1 日沙田賽日為例（圖片2、3）。假設剛跑完第 5 場，依家要部署第 6 場：
+                <br><br>
+                • <em>檢視高水圖表：</em> 第 5 場出現「全高水」入三甲（中晒 3 匹）。根據中位數原理，第 6 場連續再爆出兩匹或以上高水馬嘅機率極低。因此第 6 場策略不宜冒進，改用 2 高水 + 2 低水進行一膽拖三腳配搭 [INDEX]。
+                <br><br>
+                • <em>檢視旺指圖表：</em> 發現第 4 場同第 5 場竟然連續兩場出現「零旺指頭三名」上名。大數據告訴我們，第 6 場旺指高位馬必然進入強烈反彈期！此時一膽拖三腳布局中 [INDEX]，<strong>馬膽（主選）必須鎖定喺旺指頭三位之內</strong>，再根據這匹膽馬嘅高低水屬性，挑選餘下腳馬。透過雙向夾擊，命中率將幾何級數提升！
+              </li>
+              <li style="margin-bottom: 14px;">
+                <strong>修煉數據大局觀：</strong> 建議用戶喺非賽馬日多瀏覽歷史數據（圖片4、5、6）。高水訊號與旺指數據本身帶有強烈嘅歷史慣性同規律，非賽日睇熟模式，開鑼 live 時自然能夠秒速捕捉出擊點！
+              </li>
+            </ol>
+            
+            <p style="text-align: center; font-weight: bold; color: #2e7d32; font-size: 16px; margin-top: 20px; margin-bottom: 5px;">
+              祝各位旗開得勝，運籌帷幄！ 🚀
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ng-container>
+
+    <!-- END: 06142026 Original Quick Start Guide -->
+
+  </div>  
+  <!-- END MAIN STARTING DIV -->
+
+
+
+
+</ion-content>

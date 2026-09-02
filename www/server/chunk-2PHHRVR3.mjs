@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{b as r}from"./chunk-BVXP2SXX.mjs";import{b as t}from"./chunk-R7WB2U2Y.mjs";import{i as e,m as s,n as a}from"./chunk-NDCUGB46.mjs";import"./chunk-YSJSO6JS.mjs";var c=()=>":host(.ion-color){color:var(--ion-color-base)}",n=class{constructor(o){e(this,o)}color;render(){let o=t(this);return s(a,{key:"b6f604df1b7aa5705a5b9a458e669a6a921c02a1",class:r(this.color,{[o]:!0})},s("slot",{key:"055d07b024a6554dfcf959fc8ed7b405e2730af2"}))}};n.style=c();export{n as ion_text};
